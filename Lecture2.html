@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 50%;
+    }
+
+    .middle {
+    width: 20%;
+    }
+    
+    .right {
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_2</p> 
+</section>
+
+<!-- Aristotle Slide -->
+
+<section>
+    <div class="row">
+        <div class="column left">
+            <p> <img src=" assets2/deanima.jpeg " width="60%"> </p>
+        </div>
+        <div class="column right" >
+            <p align="left" style="font-size:20px">  
+            <br>
+            <br>
+            <br>
+            "Knowledge, however, is an attribute of the soul, and so are perception, opinion, desire, wish, and appetency generally; animal locomotion also is produced by the soul; and likewise growth, maturity, and decay. Shall we then say that each of these belongs to the whole soul, that we think, that is, and perceive and are moved and in each of these operations act and are acted upon with the whole soul, or that the different operations are to be assigned to different parts?" </p>
+            <p align="right" style="font-size:20px">  
+            &nbsp;&nbsp;&nbsp;&nbsp; -Aristotle </p>
+        </div>
+    </div>
+</section>
+
+<!-- Psychometric Curves -->
+
+<section data-background="#FFFFFF">
+    <p>Psychophysics</p>
+    <img src=" assets2/responsecurves.png " width="60%"> 
+    <p align="justify" style="font-size:15px">  
+    The psychometric curve. A. The psychometric function plots the percentage of stimuli detected by a human observer as a function of stimulus magnitude. Threshold is defined as the stimulus intensity detected on 50% of the trials. B. Detection and discrimination thresholds depend on the criteria used by individual subjects. Where an ‘ideal’ observer correctly detects the presence and absence of stimuli at the response threshold with equal probability (curve b), an observer who is told to respond to the slightest indication of a stimulus may report many false positives when no stimuli occur and has a lower response threshold (curve a). An observer who is told to respond only when very certain that a stimulus has occurred reports more hits than false positives and has a higher response thresholds (curve c). 
+    </p>
+</section>
+
+<!-- 2AFC paradigm  -->
+
+<section data-background="#FFFFFF">
+    <p> Two-alternative forced choice tasks.  </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets2/responsegrid.png " width="80%">
+        </div>
+        <div class="column right" >
+            <br>
+            <p align="justify" style="font-size:20px">  
+            The stimulus-response matrix for a stimulus detection task (yes-no) or a categorical judgment task (red-blue). Although there are two possible stimuli and two possible responses, the data represent conditional probabilities in which the experimenter controls the stimuli and measures the subject's responses. The numbers provide examples of behavioral data obtained from a strict observer who responds "yes" less often than the actual frequency of occurrence of the stimulus.
+        </p>
+        </div>
+    </div>
+</section>
+
+<!-- Variability of sensations Slide -->
+
+<section>
+    <p align="left" style="font-size:30px">  
+    The variability of sensations evoked by a stimulus can be represented with a normal probability function with a mean ($\mu$) and standard deviation ($\sigma$): <br>
+    \[ f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}\]
+    </p>
+</section>
+
+<!-- Decision Boundary Slide -->
+
+<section data-background="#FFFFFF">
+    <p> Gaussian stimulus magnitudes.  </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets2/gaussiandiscrimination.png" width="100%">
+        </div>
+        <div class="column right" >
+            <p align="justify" style="font-size:20px">  
+            <br>
+            Stimulus magnitudes can be represented by Gaussian curves with standard deviations that measure the fluctuation in sensations from trial to trial. The discriminability of a pair of stimuli is correlated with the distance between the two curves. When two stimuli are similar in magnitude, the two Gaussian curves overlap and no single criterion allows error-free responses. 
+            </p>
+        </div>
+    </div>
+    <p align="justify" style="font-size:20px">  
+    An <em> ideal observer  </em> maximizes the number of correct responses and minimizes the total errors, setting the decision boundary at the intersection of the two curves. <br>
+    <br>
+    A <em> strict observer  </em> minimizes the number of false positives but also reduces the total hits, setting the decision boundary to the right (solid line). <br>
+    <br>
+    A <em> lax observer  </em> maximizes the number of hits but also increases the total false positives, setting the decision boundary to the left of the ideal subject.<br>
+    <br>
+</section>
+
+<!-- Bayes Theorem Slide -->
+
+<section>
+    <p> Bayes' theorem </p>
+    <p align="center" style="font-size:30px">  
+       \[ P(A\mid B)={\frac {P(B\mid A)P(A)}{P(B)}} \]
+       <br> 
+       where $A$ and $B$ are events and $P(B)\neq 0$.
+       <br> 
+       <br> 
+    </p>
+
+    <p align="left" style="font-size:20px">  
+     $\bullet$ $P(A\mid B)$ is a <em> conditional probability </em>: the probability of event $A$ occurring given that $B$ is true. 
+    <br>
+    <br>
+     $\bullet$ $P(B\mid A)$ is also a conditional probability: the probability of event $B$ occurring given that $A$ is true.
+    <br>
+    <br>
+     $\bullet$ $P(A)$ and $P(B)$ are the probabilities of observing $A$ and $B$ respectively without any given conditions; they are also known as the marginal probability or prior probability.
+    <br>
+    <br>
+    </p>
+</section>
+
+<section>
+    <p> Proof of Bayes' theorem </p>
+    <div class="row">
+        <div class="column left">
+            <p align="left" style="font-size:25px">  
+                $ P(A\mid B)={\frac {P(A\cap B)}{P(B)}} \text{, if } P(B)\neq 0 $
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:25px">  
+                $P(B\mid A)={\frac {P(B\cap A)}{P(A)}} \text{, if }P(A)\neq 0$
+            </p>
+        </div>
+    </div>
+    <p align="left" style="font-size:25px">  
+        <br> 
+        <br> 
+        Solving for $P(A\cap B)$ and substituting into the above expression for $P(A\mid B)$ yields Bayes' theorem:
+       <br> 
+        \[ P(A\mid B)={\frac {P(B\mid A)P(A)}{P(B)}} \text{ if }P(B)\neq 0 \]
+       <br> 
+       <br> 
+    </p>
+</section>
+
+<section>
+    <p> Epidemiology </p>
+    <p align="left" style="font-size:25px">  
+        <br> 
+        A particular test for COVID-19 is 90% <em> sensitive  </em> <br> 
+       &nbsp;&nbsp;&nbsp;&nbsp; $\bullet$ the test is correctly positive for 90% of infected persons <br> 
+       &nbsp;&nbsp;&nbsp;&nbsp; $\bullet$ the test is incorrectly negative for the other 10% <br> 
+        <br> 
+        The test is also 80% <em> specific </em> <br> 
+       &nbsp;&nbsp;&nbsp;&nbsp; $\bullet$ the test is correctly negative for 80% of uninfected persons <br> 
+       &nbsp;&nbsp;&nbsp;&nbsp; $\bullet$ the test is incorrectly positive for the other 20% <br> 
+        <br> 
+        <br> 
+        <br> 
+    </p>
+    <p align="left" style="font-size:25px; color:#FFFF00" style="color:yellow">  
+        <b> Assuming 5% of the population is infected, what is the probability that a random person who tests positive is really infected? </b>
+        <br> 
+    </p>
+</section>
+
+<section>
+    <p> Epidemiology </p>
+    <p align="center" style="font-size:25px">  
+            $ P({\text{Infected}}\mid {\text{Positive}})={\frac {P({\text{Positive}}\mid {\text{Infected}})P({\text{Infected}})}{P({\text{Positive}})}} $
+        <br> 
+        <br> 
+            $ ={\frac {P({\text{Positive}}\mid {\text{Infected}})P({\text{Infected}})}{P({\text{Positive}}\mid {\text{Infected}})P({\text{Infected}})+P({\text{Positive}}\mid {\text{Uninfected}})P({\text{Uninfected}})}} $
+        <br> 
+        <br> 
+            $ ={\frac {0.90\times 0.05}{0.90\times 0.05+0.20\times 0.95}}={\frac {0.045}{0.045+0.19}} $ 
+        <br> 
+    </p>
+    <p align="center" style="font-size:25px; color:yellow">  
+        $ \approx 19\% $ 
+    </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Anatomy </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets2/Fain1_1a.png" width="50%">
+            <p align="center" style="font-size:20px">  
+            <b> Diagram of the eye by Galen. <br>  </b> 
+            </p>
+        </div>
+        <div class="column right" >
+            <img src="assets2/Fain1_1b.png" width="50%">
+            <p align="center" style="font-size:20px">  
+            <b> More anatomically correct diagram by Descartes.  </b> 
+            </p>
+            <p align="justify" style="font-size:15px">  
+            ABCB, Cornea and sclera; EF, iris (in actual fact closer to the lens than shown in Descartes' diagram); K, aqueous humor; L, lens; EN, zonule fibers; M, vitreous humor; GHI, retina; H, optic nerve head; O, ocular muscles; and Z, optic nerve.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Ramon y Cajal </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets2/SwansonA.png" width="50%">
+            <p align="center" style="font-size:20px">  
+            <b> Diagram of reflex and voluntary behavior </b> 
+            </p>
+        </div>
+        <div class="column right" >
+            <img src="assets2/SwansonB.png" width="63%">
+            <p align="center" style="font-size:20px">  
+            <b> Neuron types in the cerebellum. </b> 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Diffraction Limit </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets2/redspot.JPG" width="50%">
+            <p align="justify" style="font-size:20px">  
+            <b> A diffraction pattern of a red laser beam projected onto a plate after passing through a small circular aperture in another plate</b> 
+            </p>
+        </div>
+        <div class="column right" >
+            <p align="left" style="font-size:20px">  
+            Light with wavelength $\lambda$, traveling in a medium with refractive index $n$ and converging to a spot with half-angle $\theta$ will have a minimum resolvable distance of <br>
+            \[ d={\frac {\lambda }{2n\sin \theta }}={\frac {\lambda }{2\mathrm {NA} }} \] <br>
+            The NA can reach about $1.4-1.6$ in the best optical microscopes, hence the Abbe limit is $d={\frac {\lambda }{2.8}}$. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Connectomics </p>
+            <img src=" assets2/Figure1EM.png " width="60%">
+            <p align="justify" style="font-size:15px">  
+                <em> C. elegans  </em> was the first animal to have its entire nervous system mapped by electron microscopy by John White and co-workers in the 1980s. <br> More recently, eight <em> C. elegans </em> brains were reconstructed from birth to adulthood, mapping and comparing every chemical synapse and neuronal shape across whole-brain connectomes. From Witvliet et al. 2021.
+            </p>
+</section>
+
+<section> 
+    <p> Connectomics </p>
+                <iframe src="https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03778-8/MediaObjects/41586_2021_3778_MOESM10_ESM.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+</section>
+
+<section> 
+    <p> Connectomics </p>
+                <iframe src=" https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03778-8/MediaObjects/41586_2021_3778_MOESM11_ESM.mp4 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Connectomics </p>
+            <img src=" assets2/SwansonC.png " width="100%">
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Cryoelectron microscopy of Piezo</p>
+    <img src=" assets2/Fain1_cryo.png " width="50%">
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Physiology </p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets2/Fain1_actionpotentials.png " width="90%">
+        </div>
+        <div class="column right">
+            <p align="justify" style="font-size:20px">  
+                <br>
+                <br>
+                <br>
+                (A) Action potentials recorded from single axons dissected from the cutaneous nerve of a frog.<br>
+                <br>
+                <br>
+                <br>
+                (B) Action potentials from the lateral eye of the horseshoe crab <em> Limulus </em>. Each trace gives the response to a different light intensity, which was systematically increased by an additional factor of ten from dimmest (bottom) to brightest (top).
+            </p>
+        </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Physiology </p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets2/Fain1_electricalA.png " width="62%">
+            <p align="center" style="font-size:20px">  
+                <br>
+                Depolarizing response from <em> Limulus </em> photoreceptor 
+            </p>
+        </div>
+        <div class="column right">
+            <img src=" assets2/Fain1_electricalB.png " width="60%">
+            <p align="center" style="font-size:20px">  
+                Hyperpolarizing response from fish photoreceptor 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Patch electrode recording </p>
+    <img src=" assets2/Fain1_electricalC.png " width="40%">
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Molecular biology </p>
+    <img src=" assets2/Fain1_molecular.png " width="50%">
+</section>
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
