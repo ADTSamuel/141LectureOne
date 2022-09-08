@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_3</p> 
+</section>
+
+<!-- Rhodopsin Slide -->
+
+<section data-background="#FFFFFF">
+    <p>Rhodopsin</p>
+    <div class="row">
+        <div class="column left">
+            <p> <img src=" assets3/Fain9_13.png " width="50%"> </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+            <p> <img src=" assets3/rhodopsinstructure.jpeg " width="50%"> </p>
+        </div>
+    </div>
+    <p align="justify" style="font-size:20px">  
+        Three dimensional structure of bovine rhodopsin, a membrane bound protein. The chromophore, retinal, is embedded within the protein. Rhodopsin is embedded in detached discs in the outer segment of the rod photoreceptor cell and embedded in infolded lamellae in cones.
+    </p>
+</section>
+
+<!-- Biochemical Cycle Slide -->
+
+<section data-background="#FFFFFF">
+    <p>Visual cycle</p>
+    <img src=" assets3/visualcycle.png " width="50%"> 
+    <p align="justify" style="font-size:20px">  
+    Absorption of light energy causes a conformational change – 11- <em> cis </em> -retinal becomes all- <em> trans </em> -retinal – which thereby alters protein structure to activate G-protein-coupled signal transduction. Biochemistry in the rod cell restores the <em> cis  </em> configuration.
+    </p>
+</section>
+
+<!-- Boltzmann Distribution Slide -->
+
+<section data-background="#FFFFFF">
+    <p>The Boltzmann Distribution</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/exponentialdistribution.png " width="80%"> 
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px">  
+                A Boltzmann distribution is a probability distribution that gives the probability that a system will be in a certain state as a function of state energy and temperature:<br>
+
+                \[ p_{i}\propto e^{-{\varepsilon _{i}}/{(kT)}} \] 
+
+                where $p_i$ is the probability of the system being in state $i$, $\varepsilon_i$ is the energy of that state, and a constant $kT$ of the Boltzmann constant and temperature T.<br><br>
+                $k_B = 1.4 \times 10^{-23}$ J/K <br><br>
+                $k_{B}T \approx 4 \times 10^{-21}$ J <br><br>
+                The energy of one blue-green photon ($\lambda$=500 nm) is $4 \times 10^{-19}$ J.<br><br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p>The Boltzmann Factor</p>
+    <p align="justify" style="font-size:25px">  
+        The ratio of probabilities of two states is the Boltzmann factor:<br><br>
+
+        \[ {\frac {p_{i}}{p_{j}}}=e^{{(\varepsilon _{j}-\varepsilon _{i})}/{(kT)}} \] 
+
+        If a system has $M$ possible states, the sum of the state probabilities is normalized:<br><br>
+
+         \[ \sum_{j=1}^{M}{p_i}=1 \]
+
+        The probability of being in each state: <br><br>
+
+        \[ p_{i}={\frac {1}{Q}}e^{-{\varepsilon }_{i}/(kT)}={\frac {e^{-{\varepsilon }_{i}/(kT)}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/(kT)}}}} \]
+    </p>
+</section>
+
+<section data-background="#000000">
+    <p>The Exponential Atmosphere</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/Exponentialatmosphere.png " width="80%"> 
+            <p align="left" style="font-size:20px">  
+                From <em> Feynman's Lectures in Physics.</em> <br><br>
+                Mass of one oxygen molecule is $5\times10^{-23}$ g.  <br>
+                Mass of one hydrogen molecule is $3\times10^{-24}$ g.<br>
+                Does Feynman's drawing make sense?<br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="justify" style="font-size:20px">  
+                The altitude of each gas molecule is associated with a gravitational potential energy: $E=mgh$.<br><br>
+                Assuming a uniform atmospheric temperature $T$, the probability that a molecule is at height $h$ is:<br>
+
+                \[ p(h) \propto e^{-mgh/kT} \]
+
+                For this probability density to be properly normalized:<br>
+
+                \[ p(h) = \frac{e^{-mgh/kT}}{\int_{h=0}^{\infty} e^{-mgh/kT}dh} \]
+            </p>
+            <p align="justify" style="font-size:20px; color:yellow">  
+                The expectation value for the altitude of a gas molecule depends on its mass: $ \left< h \right> = \frac{kT}{mg} $.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#000000">
+    <p>Boltzmann and Chemical Reactions</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/Reactioncoordinate.png " width="100%"> 
+            <p align="center" style="font-size:20px">  
+                Reaction coordinate<br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="justify" style="font-size:20px">  
+                Assign an energy to each point along the reaction coordinate. Using Boltzmann factors, we can infer the relative likelihood of being in different states.<br><br>
+                Going from one stable state $A$ to another state $B$ might require transit through an activation state, which slows the reaction.<br><br>
+                At equilibrium, the relative likelihood of any two states is:<br>
+                \[ \frac{p_A}{p_B}=e^{-\frac{\Delta E}{kT}} \]
+            </p>
+
+            <p align="justify" style="font-size:20px; color:yellow">  
+                A Boltzmann estimate of the fraction of particles in state $A$ that are able to move over the barrier thanks to fluctuations in thermal energy:<br>
+
+                \[ k_{A \Rightarrow B} \propto e^{-\frac{E_{act}}{k_B T}} \]
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#000000">
+    <p>Deriving Boltzmann </p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/thermalenergy.png " width="100%"> 
+            <p align="center" style="font-size:20px">  
+                $N$ weakly interacting systems divide total $E$ energy among them<br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="justify" style="font-size:20px">  
+                Say that you have $N$ particles that are given a total amount of energy $E$.<br><br>
+                These particles are able to freely exchange energy among them, but are constrained to quantal energy levels.<br><br>
+                How many particles can you expect to find at each energy level?<br><br>
+                What is the probability of a particle having a certain amount of energy?<br><br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#000000">
+    <p>Deriving Boltzmann </p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/thermalenergy.png " width="100%"> 
+            <p align="center" style="font-size:20px">  
+                $N$ weakly interacting systems divide total $E$ energy among them<br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px">  
+                <br>
+                <br>
+                <br>
+                Mass Conservation: 
+                $ \sum_{s} n_s = N $<br><br>
+                Energy Conservation: 
+                $ \sum_{s} n_s \varepsilon_s = E $<br><br>
+                Probability of being in state $s$:
+                $ p_s=n_s/N $<br><br>
+                Normalization condition: 
+                $ \sum_s p_s = 1 $<br><br>
+                Average Energy of a Particle:
+                \[ \left< \varepsilon \right> = \sum_s p_s \varepsilon_s =\frac{\sum_s n_s\varepsilon_s}{\sum_sn_s} \]
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p>Deriving Boltzmann </p>
+    <div class="row">
+        <div class="column left">
+            <table style="border:hidden; font-size:30px">
+                <thead>
+                    <th align="center" > State</th>
+                    <th align="center" >Energy</th>
+                    <th align="center" >Number</th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">1</td>
+                    <td align="center">$\varepsilon_1$</td>
+                    <td align="center">$n_1$</td>
+                  </tr>
+                  <tr>
+                    <td align="center">2</td>
+                    <td align="center">$\varepsilon_2$</td>
+                    <td align="center">$n_2$</td>
+                  </tr>
+                  <tr>
+                    <td align="center">3</td>
+                    <td align="center">$\varepsilon_3$</td>
+                    <td align="center">$n_3$</td>
+                  </tr>
+                  <tr>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">$s$</td>
+                    <td align="center">$\varepsilon_s$</td>
+                    <td align="center">$n_s$</td>
+                  </tr>
+                  <tr>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                    <td align="center">.</td>
+                  </tr>
+                </tbody>
+            </table> 
+            <p align="center" style="font-size:20px; color:yellow">  
+                What is the probability of an $n_s$ distribution?<br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px">  
+            The number of ways you can arrange a number of particles at each energy level is given by combinatorics:
+                \[ W=\frac{N!}{n_1!n_2!n_3!...} \]
+            We need to maximize $\log{W}$<br>
+                \[ \log{W} = \log{N!}-\sum_s \log{n_s!}  \]
+            Stirling's formula<br>
+                 \[ N!=\left( \frac{N}{e} \right)^N \]
+            </p>
+            <p align="left" style="font-size:20px; color:green">  
+            <b> No more factorials!<br> </b> 
+                \[ \log{W} = N(\log N -1 ) - \sum_s n_s (\log n_s -1 )\]
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#000000">
+    <p>Lagrange Multipliers</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/lagrange.png " width="100%"> 
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px;">  
+                For the function $w=f(x,y,z)$ constrained by $g(x,y,z)=c$, the maxima and minima are those points where $\nabla f$ is parallel to $\nabla g$:
+    
+                \[ \nabla f - \lambda \nabla g = 0 \]
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p>Lagrange Multipliers</p>
+            <p align="left" style="font-size:20px;">  
+                     Add $N$ (Conservation of Mass) and $E$ (Conservation of Energy) to $\log{W}$, each multiplied by a Lagrange multiplier ($\alpha$ and $\beta$). The most probable $W$ is that for which:<br><br>
+                     \[ \frac{d}{dn_s} \left(\log{W} - \alpha \sum_s n_s - \beta \sum_s \varepsilon_s n_s \right) = 0 \]<br>
+            </p>
+            <p align="center" style="font-size:20px;">  
+                     Calculating for each $n_s$ gives:<br>
+                     \[ \log{n_s}+ \alpha - \beta \varepsilon_s = 0 \]<br>
+            </p>
+            <p align="center" style="font-size:25px; color:yellow">  
+                     The Boltzmann distribution:<br>
+                     \[ n_s =e^{-\alpha}e^{-\beta \varepsilon_s} \]
+            </p>
+</section>
+
+
+<section data-background="#000000">
+    <p>Shannon Entropy</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets3/entropycoincropped.png " width="100%"> 
+            <p align="center" style="font-size:20px;">  
+                Entropy of a coin toss
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px;">  
+                 The entropy $H(X)$ of a random variable $X$
+                     \[ H(X)=-\sum_{x \in X}^{} p(x) \log_2{p(x)} \]
+                     \[ H(X)=\left< \log_2{p(x)} \right>  \]<br>
+                 The entropy of a two-state system
+                     \[ H(X)= -p_A \log_2{p_A} -p_B \log_2{p_B} \]
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p>Maximize Shannon Entropy with Lagrange Multipliers</p>
+    <div class="row">
+        <div class="column left">
+            <p align="left" style="font-size:20px;">  
+                    Maximize entropy: 
+                    \[ H(p)=-\sum_{i=1}^{N} p_i \log{p_i} \]
+                    Normalization constraint: 
+                    \[ \sum_{i=1}^{N} p_i = 1 \]
+                    Fixed mean energy constraint: 
+                    \[ \sum_{i=1}^{N} p_i \varepsilon_i = E \]
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:25px; color:yellow">  
+                    The Boltzmann Distribution
+                    \[ p_i \propto e^{-\lambda \varepsilon_i} \]<br>
+            </p>
+            <p align="left" style="font-size:25px; color:green">  
+             <b> An exponential distribution of energies is the distribution with the least bias. </b> 
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
