@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_5</p> 
+</section>
+
+<!-- Simple thresholds Slide -->
+
+<section>
+    <p> Is there a minimum energy for seeing?</p>
+            <br>
+            <p align="left" style="font-size:30px">  
+                "The first measurements of the energy at the visual threshold were made by Langley (1889) with the bolometer he invented for such purposes. He found the energy to be $3\times 10^{-9}$ ergs light of 550 nm. Langley worked before the physiology of vision was understood, so that he used the wrong light and took none of the precautions now known to be necessary; even so, his results are too high only by a factor of 10." <br>
+            </p>
+            <p align="right" style="font-size:30px">  <em> -Hecht, Shlaer, and Pirenne </em> </p>
+</section>
+
+<section>
+    <p>Simple thresholds</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets5/Einstein_en_Lorentz.jpg " width="60%">
+            <p align="center" style="font-size:30px">  
+                Einstein and Lorenz<br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+            <br>
+            <p align="center" style="font-size:30px">  
+            Light is made of photons<br><br>
+            $E_{min}=nhf$<br><br>
+            Lorentz calculated $\sim$100 photons <br><br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p>Simple thresholds</p>
+            <br>
+            <table style="border:hidden; font-size:30px">
+                <thead>
+                    <th align="center" > Wavelength</th>
+                    <th align="center" >No. of quanta</th>
+                    <th align="center" >Source</th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">505</td>
+                    <td align="center">17-30</td>
+                    <td align="center">Chariton and Lea, 1929</td>
+                  </tr>
+                  <tr>
+                    <td align="center">507</td>
+                    <td align="center">34-68</td>
+                    <td align="center">von Kries and Eyster, 1907</td>
+                  </tr>
+                  <tr>
+                    <td align="center">530</td>
+                    <td align="center">40-90</td>
+                    <td align="center">Barnes and Czerny, 1932</td>
+                  </tr>
+                </tbody>
+            </table> 
+</section>
+
+<section>
+    <p>Simple thresholds</p>
+            <br>
+            <p align="left" style="font-size:30px">  
+                "In the fifty years since Langley there have been eleven efforts to redetermine the minimum energy for vision. We have carefully studied all these accounts and have done our best to evaluate the measurements. Unfortunately, many of them contain serious errors which invalidate them. Most of them involved no direct energy determinations; instead, the investigators relied on previously measured energy distributions in standard sources and made elaborate computations from them. Only a few can be considered as reliable."
+            </p>
+            <p align="right" style="font-size:30px">  <em> -Hecht, Shlaer, and Pirenne </em> </p>
+</section>
+
+<section>
+    <p>Visual conditions for maximum retinal sensitivity</p>
+            <p align="center" style="font-size:30px; color:orange">  
+                Dark adaptation
+            </p>
+            <p align="center" style="font-size:25px">  
+               "Complete dark adaptation means a stay of at least 30 minutes in the dark"<br>
+            </p>
+            <p align="center" style="font-size:30px; color:orange">  
+                Peripheral vision
+            </p>
+            <p align="center" style="font-size:25px">  
+               "The greatest density of rod elements begins at about 18&#176; out"<br>
+            </p>
+            <p align="center" style="font-size:30px; color:orange">  
+                Small test fields
+            </p>
+            <p align="center" style="font-size:25px">  
+"the larger the test area, the smaller need the intensity be for its recognition"<br>
+"This reciprocal relation is exact only for small areas."<br>
+"a minimum for the product of area and intensity for fields of 10 minutes diameter."<br>
+            </p>
+</section>
+
+<section data-background="#000000">
+    <p>Optimum length</p>
+    <div class="row">
+        <div class="column left">
+            <img src=" assets5/Hechtrodsensitivity.png " width="80%">
+            <p align="center" style="font-size:30px; color:orange">  
+            Comparison of scotopic luminosity at the retina <br> with visual purple absorption.<br>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+            <br>
+            <p align="left" style="font-size:30px">  
+                The energy required to pass over the visual threshold involves an approximately reciprocal relationship between intensity and time of exposure. <br><br>
+            </p>
+            <p align="left" style="font-size:30px; color:orange">  
+                For exposures &#60;0.01 second, the reciprocal relation is perfect <br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#000000">
+    <p>Apparatus for measuring minimum energies</p>
+        <img src=" assets5/Hechtapparatus.png " width="80%">
+        <p align="left" style="font-size:25px">  
+            <br>
+            The eye at the pupil <em>P</em> fixates the red point <em>FP</em> and observes the test field formed by the lens <em>FL</em> and the diaphragm <em>D</em>. The light for this field comes from the lamp <em>L</em> through the neutral filter <em>F</em> and wedge <em>W</em>, through the double monochromator <em>MIM</em> and is controlled by the shutter <em>S.</em> <br>
+        </p>
+</section>
+
+<section data-background="#000000">
+    <p>Visual thresholds for different human observers</p>
+    <div class="row">
+        <div class="column left">
+            <table style="border:hidden; font-size:20px">
+                <thead>
+                    <th align="center" > Observer</th>
+                    <th align="center" >No. of quanta</th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">S.H.</td>
+                    <td align="center">126</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">135</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">107</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">87</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">79</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">123</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">148</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">S.S.</td>
+                    <td align="center">79</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">54</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">56</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">62</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">96</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">99</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">104</td>
+                  </tr>
+                </tbody>
+            </table> 
+        </div>
+        <div class="column right" >
+            <table style="border:hidden; font-size:20px">
+                <thead>
+                    <th align="center" > Observer</th>
+                    <th align="center" >No. of quanta</th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">C.D.H.</td>
+                    <td align="center">65</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">76</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">58</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">58</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">M.S.</td>
+                    <td align="center">81</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">112</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">S.R.F.</td>
+                    <td align="center">120</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">A.F.B.</td>
+                    <td align="center">83</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">M.H.P.</td>
+                    <td align="center">79</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">83</td>
+                  </tr>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">138</td>
+                  </tr>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+            <p align="center" style="font-size:25px; color:orange">  
+                Each datum is the result of many measurements during a single experimental period, <br>
+                and is the energy which can be seen with 60% frequency.<br>
+            </p>
+</section>
+
+<section data-background="#000000">
+    <p>Probability of seeing curves</p>
+    <div class="row">
+        <div class="column left">
+        <img src=" assets5/Hechtpoissoncurves.png " width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+            <p align="left" style="font-size:25px">  
+                Let $a$ be the average number of quanta which a flash yields to the retina. Poisson statistics states that: 
+                    \[ P_n = \frac{a^n}{n!} e^{-a}  \]
+            </p>
+            <p align="left" style="font-size:25px; color:orange">  
+                If $\theta$ is the threshold for seeing, then the probability of seeing is a cumulative probability distribution: 
+                    \[ P_{see} = \sum_{n=\theta}^{\infty} \frac{a^n}{n!} e^{-a} \]
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#000000">
+    <p>Apparatus for measuring minimum energies</p>
+        <img src=" assets5/Hechtpoissonfits.png " width="80%">
+        <p align="center" style="font-size:25px">  
+            <br>
+            Relation between the average number of quanta per flash at the cornea and the frequency with which the flash is seen.
+        </p>
+            <p align="center" style="font-size:25px; color:orange">  
+            The number of critical events needed to produce a visual effect is between 5 and 8.
+        </p>
+</section>
+
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
