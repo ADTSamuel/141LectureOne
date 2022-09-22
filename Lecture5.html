@@ -378,17 +378,175 @@ td, th {border:hidden;}
 
 
 <section data-background="#000000">
-    <p>Apparatus for measuring minimum energies</p>
+    <p>More than one quantum is needed to see</p>
         <img src=" assets5/Hechtpoissonfits.png " width="80%">
         <p align="center" style="font-size:25px">  
             <br>
-            Relation between the average number of quanta per flash at the cornea and the frequency with which the flash is seen.
+            Average number of quanta per flash at the cornea vs. frequency of seeing
         </p>
             <p align="center" style="font-size:25px; color:orange">  
             The number of critical events needed to produce a visual effect is between 5 and 8.
         </p>
 </section>
 
+<section>
+    <p>The limit to the sensitivity of vision</p>
+            <p align="center" style="font-size:25px">  
+                Several photons are needed to see. <br><br>
+                5-8 photons over 500 rods will rarely caused `double hits' <br><br>
+                Therefore, one quantum excites a rod. <br><br>
+            </p>
+            <p align="center" style="font-size:25px; color:orange">  
+                Quantum stimulus fluctuations &#8594 response variability <br>
+            </p>
+            <p align="center" style="font-size:30; color:orange">  
+                <em> Why is the threshold >1?  </em> <br><br>
+            </p>
+</section>
+
+<section>
+    <p>Horace Barlow's idea</p>
+            <p align="center" style="font-size:25px">  
+                Internal noise is from spontaneous isomerizations of rhodopsin <br><br>
+                Internal noise affects response variability<br><br>
+                Lower internal noise &#8594 lower thresholds<br><br>
+                Higher internal noise &#8594 higher thresholds <br><br>
+            </p>
+            <p align="center" style="font-size:25px; color:orange">  
+                Internal noise is fixed by temperature <br>
+            </p>
+            <p align="center" style="font-size:30px; color:orange">  
+                Reset response reliability? <br><br>
+            </p>
+</section>
+
+<section data-background="#000000">
+    <p>Barlow's experiment to vary response reliability</p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets5/BarlowFig1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+            <p align="center" style="font-size:25px">  
+                The experimenter delivered 100 flashes at 5 different intensities in random sequence, mixed in with 300 blanks.<br><br>
+                Right probability curve: <br>
+                seeing a flash<br>
+                <span style="color: orange">&#8594 high reliability </span><br>
+            </p>
+            <p align="center" style="font-size:25px">  
+                Left probability curve: <br>
+                <em>possibly</em> seeing + seeing <br>
+                <span style="color: orange">&#8594 low reliability </span><br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p>Barlow's formulation</p>
+            <p align="center" style="font-size:25px">  
+                <span style="color: orange"> $N$: </span> average number of quanta at cornea<br><br>
+                <span style="color: orange"> $n$: </span> average number of flash-evoked rod excitations<br><br>
+                <span style="color: orange"> $x$: </span> average number of confusable events (spontaneous rod excitations)<br><br>
+                <span style="color: orange"> $a=n+x$: </span> total number of rod excitations <br><br>
+                <span style="color: orange"> $c$: </span> threshold number of events to get a response <br><br>
+            </p>
+            <p align="center" style="font-size:25px">  
+                <span style="color: orange"> $Pa(c)$: </span> 
+                probability of $c$ or more events occurring if the average number is $a$<br>
+                <span style="color: orange"> \[ Pa(c) = \sum_{y=c}^{\infty} \frac{a^y}{y!} e^{-a} \] </span> 
+            </p>
+</section>
+
+<section>
+    <p>Barlow's results</p>
+            <p align="center" style="font-size:25px">  
+                $N$: average number of quanta at cornea<br><br>
+                $n$: average number of flash-evoked rod excitations<br><br>
+                $x$: average number of confusable events (spontaneous rod excitations)<br><br>
+                $a=n+x$: total number of rod excitations <br><br>
+                $c$: threshold number of events to get a response <br><br>
+            </p>
+            <p align="center" style="font-size:25px; color:orange">  
+                $Pa(c)$: probability of $c$ or more events occurring if the average number is $a$<br>
+                    \[ Pa(c) = \sum_{y=c}^{\infty} \frac{a^y}{y!} e^{-a} \]
+            </p>
+</section>
+
+<section>
+    <p>Barlow's results</p>
+            <table style="border:hidden; font-size:40px">
+                <thead>
+                    <th align="center" > $n/N$</th>
+                    <th align="center" > $x$ </th>
+                    <th align="center" > $c_{low}$ </th>
+                    <th align="center" > $c_{high}$ </th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">0.14</td>
+                    <td align="center">8.9</td>
+                    <td align="center">17</td>
+                    <td align="center">19</td>
+                  </tr>
+                </tbody>
+            </table> 
+</section>
+
+<section data-background="#000000">
+    <p>Previous results interpreted by Barlow</p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets5/BarlowFig2.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+            <p align="center" style="font-size:30px; color:orange">  
+                Hecht (right)
+            </p>
+            <table style="border:hidden; font-size:30px">
+                <thead>
+                    <th align="center" > $n/N$</th>
+                    <th align="center" > $x$ </th>
+                    <th align="center" > $c$ </th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">0.13</td>
+                    <td align="center">8.9</td>
+                    <td align="center">21</td>
+                  </tr>
+                </tbody>
+            </table> 
+            <p align="center" style="font-size:30px; color:orange">  
+                van der Velden (left)
+            </p>
+            <table style="border:hidden; font-size:30px">
+                <thead>
+                    <th align="center" > $n/N$</th>
+                    <th align="center" > $x$ </th>
+                    <th align="center" > $c$ </th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">0.9</td>
+                    <td align="center">8.9</td>
+                    <td align="center">15</td>
+                  </tr>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+</section>
 
 </div>
 
