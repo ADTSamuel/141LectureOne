@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_9</p> 
+</section>
+
+<!-- Simple thresholds Slide -->
+
+<section data-background="#000000">
+    <p>Barlow's experiment </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets5/BarlowFig1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right" >
+
+            <p align="center" style="font-size:25px">  
+            <span style="color:white"> Left: probability of seeing <br>
+                for <em>possible</em> photons </span> <br><br>
+            <span style="color:white"> Right: probability of seeing <br>
+                for <em>seen</em> photons </span> <br><br>
+            </p>
+
+            <table style="border:hidden; font-size:25px">
+                <thead>
+                    <th align="center" > $n/N$ </th>
+                    <th align="center" > $x$ </th>
+                    <th align="center" > $c_{low}$ </th>
+                    <th align="center" > $c_{high}$ </th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center">0.14</td>
+                    <td align="center">8.9</td>
+                    <td align="center">17</td>
+                    <td align="center">19</td>
+                  </tr>
+                </tbody>
+            </table> 
+
+            <p align="center" style="font-size:25px">  
+            <br>
+            <span style="color:orange"> Perceptual difference for stimulus difference of two photons! </span> 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Sakitt's experiment</p> 
+        <p align="left" style="font-size:25px">  
+            <li align="left" style="font-size:25px; color:white"> Dark-adapted humans were asked to rate blanks and dim flashes of light.<br><br> </li> 
+            <li align="left" style="font-size:25px; color:white"> The ratings were 0, 1, 2, 3, 4, 5, and 6.<br><br> </li> 
+            <li align="left" style="font-size:25px; color:white"> Stimuli were average flashes of 66 ("strong") or 55 ("weak") photons at the cornea.<br> </li> 
+        </p>
+</section>
+
+<section>
+    <p> Results </p> 
+        <p align="center" style="font-size:25px">  
+            For each stimulus the mean rating $i$ and mean square rating $i^2$ were calculated:<br><br>
+            $ \left< i \right> = \sum_{i=0}^6 i p_i $&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+            $ \left< i^2 \right> = \sum_{i=0}^6 i^2 p_i $
+            <br> <br> <br>
+        </p>
+            <table style="font-size:25px">
+                <thead>
+                    <th align="center" > Signal</th>
+                    <th align="center" > $N_0$</th>
+                    <th align="center" > $N_1$</th>
+                    <th align="center" > $N_2$</th>
+                    <th align="center" > $N_3$</th>
+                    <th align="center" > $N_4$</th>
+                    <th align="center" > $N_5$</th>
+                    <th align="center" > $N_6$</th>
+                    <th align="center" style="color:orange"> $\sum N_i$ </th>
+                    <th align="center" style="color:orange"> $\left< i \right> $ </th>
+                    <th align="center" style="color:orange"> $\left< i^2 \right> - \left< i\right> ^2$ </th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center" > Strong</td>
+                    <td align="center" > 70 </td>
+                    <td align="center" > 75 </td>
+                    <td align="center" > 66 </td>
+                    <td align="center" > 109 </td>
+                    <td align="center" > 63 </td>
+                    <td align="center" > 12 </td>
+                    <td align="center" > 5 </td>
+                    <td align="center" style="color:orange"> 400 </td>
+                    <td align="center" style="color:orange"> 2.19 </td>
+                    <td align="center" style="color:orange"> 2.22 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" > Weak </td>
+                    <td align="center" > 83 </td>
+                    <td align="center" > 104 </td>
+                    <td align="center" > 78 </td>
+                    <td align="center" > 87 </td>
+                    <td align="center" > 36 </td>
+                    <td align="center" > 11 </td>
+                    <td align="center" > 1 </td>
+                    <td align="center" style="color:orange"> 400 </td>
+                    <td align="center" style="color:orange"> 1.82 </td>
+                    <td align="center" style="color:orange"> 1.93 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" > Blank </td>
+                    <td align="center" > 566 </td>
+                    <td align="center" > 192 </td>
+                    <td align="center" > 33 </td>
+                    <td align="center" > 9 </td>
+                    <td align="center" > 0 </td>
+                    <td align="center" > 0 </td>
+                    <td align="center" > 0 </td>
+                    <td align="center" style="color:orange"> 400 </td>
+                    <td align="center" style="color:orange"> 0.36 </td>
+                    <td align="center" style="color:orange"> 0.38 </td>
+                  </tr>
+                </tbody>
+            </table> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Linearity between rating and flash intensity </p> 
+        <img src="assets9/Sakitt1.png" width="60%">
+        <p align="center" style="font-size:25px">  
+            Plotting $i$, the average rating, against $Q_c$, the average number of quanta at the cornea:<br><br>
+            $ a = 0.0274 \times Q_c+0.36 $
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+            $ a= 0.0274\times(Q_c+13.1) $
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Probability of seeing $i$ or more </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets9/Sakitt2.png" width="100%">
+        <p align="center" style="font-size:20px">  
+            Cumulative probabilities $P$ giving a rating $i$ or more<br>
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            Abscissa is log of rod signal <br><br>
+            Points labelled B, W and S are at values of $a$ for blank, weak, and strong stimuli<br><br>
+            $\theta$ is absolute threshold.<br><br>
+            Smooth curves are Poisson probabilities $P(c, a)$ that $c$ or more rod signals occur when $a$ is the average number occurring:
+            \[ P(c, a) = \sum_{n=c}^{\infty} \frac{a^n}{n!} e^{-a} \]
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Quantum Optical Single Photon Light Source </p> 
+        <img src="assets9/Tinsley1.png" width="60%">
+        <p align="center" style="font-size:25px">  
+            <li align="left" style="font-size:25px;color:black"> Correlated pairs of photons (called signal and idler) are produced from a more energetic pump photon in a non-linear crystal following energy and momentum conservation. </li> <br>
+            <li align="left" style="font-size:25px;color:blue"> By detecting one of the photons (idler) and sending the other (signal) to the observers eye, the setup creates an effective single-photon light source with sub-Poissonian photon number  </li> 
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Two-alternative Forced Choice </p> 
+        <img src="assets9/Tinsley2.png" width="60%">
+        <p align="center" style="font-size:25px">  
+        <li align="left" style="font-size:25px;color:black"> On the triggering of a trial, the subject was presented with two intervals, each heralded by a sound. </li> 
+        <li align="left" style="font-size:25px;color:black"> One of the two intervals was pseudorandomly chosen to trigger a possible single photon from SPDC around the peak rod sensitivity, while the other interval was a ‘blank’.  </li> 
+        <li align="left" style="font-size:25px;color:black"> After the second interval the subject indicated which of the two intervals they thought contained the stimulus photons (interval response) and provided a confidence rating (R1–R3). </li> 
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Single photon perception </p> 
+        <img src="assets9/Tinsley3.png" width="40%">
+        <p align="center" style="font-size:25px">  
+           <li align="left" style="font-size:25px;color:black"> Averaging across subjects’ responses and ratings from a total of 30,767 trials, 2,420 single-photon events passed post-selection. </li> 
+           <li align="left" style="font-size:25px;color:black"> Averaged probability of correct response was $0.516 \pm 0.010$ (P= 0.0545). </li> 
+        </p>
+        <p align="center" style="font-size:30px;color:red">  
+           <em> Subjects could detect a single photon with probability above chance. </em> 
+        </p>
+</section>
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
