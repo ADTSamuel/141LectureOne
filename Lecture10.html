@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_10</p> 
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Bacterial chemotaxis </p> 
+        <img src="assets10/Berg1988Figure1.png" width="80%">
+        <p align="center" style="font-size:25px">  
+            Comparison of the size of man, <em>E. coli,</em> and part of its flagellar motor. 
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Biased random walks </p> 
+        <img src="assets10/Berg1988Figure2.png" width="50%">
+        <p align="center" style="font-size:25px">  
+            Wild-type <em>E. coli</em> cell executing a random walk in a homogeneous medium. <br>
+            Planar projections of a 3D track
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Biased random walks</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/BergBrown6.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+            <br>
+            Chemotaxis to serine (top) <br>
+            and aspartate (bottom). <br><br>
+            Data plotted as the logarithm of the fractional number of runs of length greater than a given length. <br><br>
+            a, Runs in the control experiment<br>
+            b, runs down the gradient<br>
+            c, runs up the gradient<br>
+        </p>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> The Perfect Monitor</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Aquino1.png" width="100%">
+            <p align="left" style="font-size:20px">  
+            The perfect monitor is permeable to ligand molecules and estimates the concentration $c_0$ by counting the molecules in its volume.<br><br>
+            Since the molecules diffuse independently, the number of molecules $N$ is Poisson distributed.<br><br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            For the Poisson distribution, variance equals the mean: $\delta N^2= \bar{N}$:<br><br>
+                \[ \frac{\delta c^2}{c_0^2} = \frac{\delta N^2}{\bar{N}^2}=\frac{1}{\bar{N}}=\frac{1}{c_0 V}  \] <br><br>
+        </p>
+        <p align="center" style="font-size:20px">  
+           <span style="color:blue"> <b> Diffusion can help!   </b> </span> <br><br>
+        </p>
+        <p align="left" style="font-size:20px">  
+            In time $T$, $M \approx T/\tau_D$ independent measurements, ($\tau_D \approx a^2/D$ is turnover time)<br><br>
+            This reduces uncertainty:
+                \[ \frac{\delta c^2}{c_0^2} = \frac{1}{M\bar{N}} = \frac{1}{(T/\tau_D)c_0V}\approx \frac{1}{Dac_0T} \] 
+        </p>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <p> Brownian motion </p> 
+        <video loop controls='true' width='60%' height='60%' src="assets10/output.mp4" data-autoplay></video>
+        <p align="center" style="font-size:25px">  
+            Movement of 0.8 &mu;m diameter latex spheres in water at room temperature.        
+    </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Lysozyme </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/lysozyme.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+            $m=2.3 \times 10^{-20}\text{g}$<br><br>
+            $k_B T = 4 \times 10^{-14} \text{g cm}^2 / \text{sec}^2$<br><br>
+            $\left< v_x^2 \right> ^{1/2}=1.3 \times 10^3 \text{cm/sec}$<br><br>
+            Statistical mechanics says that instantaneous velocity is <em>fast</em>, but this velocity is not directly useful in calculating diffusion rates.
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> One dimensional random walk </p> 
+        <img src="assets10/BergFig1_2.png " width="50%">
+        <p align="center" style="font-size:25px">  
+            1D random walk<br>
+            Particles start at the origin<br>
+            Step Size = $\delta$<br>
+            Step Interval = $\tau$<br>
+            Instantaneous velocity = $\delta/\tau$<br>
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> One dimensional random walk </p> 
+        <img src="assets10/BergFig1_2.png " width="50%">
+        <p align="center" style="font-size:25px">  
+            Each particle steps to the right or to the left once every $\tau$ seconds <br><br>
+            Moving at velocity $\pm v_x$, distance traveled is $\delta = \pm v_x \tau$.<br><br>
+            Particle position after the $n$th step differs from the $(n-1)$th step by $\pm \delta$:
+            \[ x_i (n)=x_i (n-1) \pm \delta \]
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> One dimensional random walk </p> 
+        <img src="assets10/BergFig1_2.png " width="50%">
+        <p align="center" style="font-size:25px">  
+            The mean displacement does not change:
+                \[ \left< x(n) \right> = \frac{1}{N}\sum_{i=1}^N \left[ x_i(n-1) \pm \delta \right] \]
+                \[ \left< x(n) \right> = \frac{1}{N}\sum_{i=1}^N x_i(n-1) \]
+                \[ \left< x(n) \right> = \left< x(n-1) \right> \]
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> One dimensional random walk </p> 
+        <img src="assets10/BergFig1_2.png " width="50%">
+        <p align="center" style="font-size:25px">  
+            The mean displacement does not change:
+                \[ \left< x(n) \right> = \frac{1}{N}\sum_{i=1}^N \left[ x_i(n-1) \pm \delta \right] \]
+                \[ \left< x(n) \right> = \frac{1}{N}\sum_{i=1}^N x_i(n-1) \]
+                \[ \left< x(n) \right> = \left< x(n-1) \right> \]
+               <span style="color:blue"> If $\left< x(0) \right> = 0$, then $\left< x(t) \right> = 0$ </span> 
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Brownian movement, the second movement</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/BergFig13.png" width="80%">
+            <p align="left" style="font-size:20px">  
+                The probability of finding particles at different points at $t=1, 4, \text{ and } 16 \text{ sec}$.<br><br>
+                Standard deviations increase with the square root of time<br><br>
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            Squared coordinate changes with time:
+                \[ x_i^2 (n) = x_i^2 (n-1) \pm 2 \delta x_i(n-1) + \delta^2 \]
+            <br>
+            Mean squared coordinate grows with time:<br><br>
+               $ \left< x^2(n) \right> = \frac{1}{N} \sum_{i=1}^N x_i^2(n) $<br><br>
+               $ \left< x^2(n) \right> = \frac{1}{N} \sum_{i=1}^N \left[ x_i^2(n-1) \pm 2 \delta x_i(n-1)+\delta^2 \right] $<br><br>
+               $ \left< x^2(n) \right> = \left< x^2(n-1) \right> + \delta^2 $ <br><br>
+        </p>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <p> The Diffusion Coefficient </p> 
+        <p align="left" style="font-size:25px">  
+            <li align="left" style="font-size:25px;color:white"> Since $x_i(0)=0$ for all particles $i$, $\left< x^2(0)\right>=0$. </li><br>
+            <li align="left" style="font-size:25px;color:white"> Thus, $\left< x^2(1)\right>=\delta^2$, $\left< x^2(2)\right>=2\delta^2$, $\left< x^2(3)\right>=3\delta^2$, ..., and $\left< x^2(n)\right>=n\delta^2$. </li> <br>
+            <li align="left" style="font-size:25px;color:white"> It follows that the mean-square displacement is proportional to $t$, the root-mean-square displacement is proportional to the square-root of $t$. </li><br>
+            <li align="left" style="font-size:25px;color:white"> Note that $n=t/\tau$, so that: $ \left< x^2(t) \right> = (t/\tau) \delta^2 = (\delta^2/\tau)t $  </li> <br>
+            <li align="left" style="font-size:25px;color:orange"> We define a diffusion coefficient, $D=\delta^2/2\tau$, so: 
+            \[ \left< x^2 \right> = 2Dt \] </li> 
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Diffusion follows binomial statistics </p> 
+        <img src="assets10/BergFig1_2.png " width="50%">
+        <p align="center" style="font-size:20px">  
+            For a 1D random walk, a particle steps to the right with probability $p$ and to the left with probability $q$. <br><br>
+            \[
+                P(k;n,p)=\frac{n!}{k!(n-k)!}p^{k}q^{n-k}
+            \]
+
+            Displacement in $n$ trials, $x(n)$, is the number of steps to the right minus the number to the left times step length, $\delta$:
+            \[
+                x(n)=\left[ k-(n-k) \right] \delta = (2k-n)\delta
+            \]<br>
+        </p>
+        <p align="center" style="font-size:25px">  
+            Since we know the distribution of $k$, we know the distribution of $x$.<br>
+            <span style="color:blue"> The two distributions have the same shape. </span> 
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Diffusion follows binomial statistics </p> 
+        <img src="assets10/BergFig1_2.png " width="50%">
+    <div class="row">
+        <div class="column left">
+        <p align="left" style="font-size:20px">  
+            Mean particle displacement is:<br><br>
+            $ \left< x(n) \right> = (2 \left< k \right> -n)\delta $<br><br>
+            where $\left< k \right> = np.$<br><br>
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            Mean-square displacement is<br><br>
+            $ \left< x^2(n) \right>   = \left< \left[ ( 2k - n ) \delta \right] ^2 \right> $<br><br>
+            $ \left< x^2(n) \right>   = (4\left< k^2 \right> - 4 \left< k \right> n + n^2) \delta^2 $<br><br>
+            where $\left< k^2 \right> = (np)^2 + npq$<br>
+        </p>
+        </div>
+    </div>
+
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> The Central Limit Theorem</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/BergFig13.png" width="80%">
+            <p align="left" style="font-size:20px">  
+                When $n$ and $np$ are both large, the binomial distribution, $P(k;n,p)$ becomes:<br><br>
+                $ P(k)dk=\frac{1}{(2\pi \sigma^2)^{1/2}}e^{-(k-\mu)^2/2\sigma^2}dk $
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            Substitute:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; $x=(2k-n)\delta$, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; $dx=2\delta dk$ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; $p=q=1/2$ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; $t=n/\tau$<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; $D=\delta^2/2 \tau$,<br><br><br>
+            <span style="color:blue"> $ P(x)dx=\frac{1}{(4 \pi D t)^{1/2}}e^{-x^2/4Dt}dx $</span> <br><br> 
+            $P(x)dx$: the Gaussian probability of finding a particle between $x$ and $x+dx$.<br><br>
+            Variance: $\sigma_x^2=2Dt$. <br><br>
+            Standard deviation: $\sigma_x=(2Dt)^{1/2}$.<br><br>
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Einstein-Smoluchowski</p>
+    <p align="center" style="font-size:25px">  $D=k_BT/f_r$ </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/viscousdrag.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+            If $v=\frac{dx}{dt}$ is the velocity of a particle, the average is given by equipartition:<br><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp; $ m \left< v^2 \right> = k_B T $<br><br>
+            A particle moving with respect to the fluid at the speed $v$, experiences a viscous resistance equal to $-f_r v$ according to Stokes’ formula and fluid mechanics.<br><br>
+        </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Langevin's Derivation of Einstein-Smoluchowski </p> 
+        <p align="left" style="font-size:25px">  
+            Multiply Newton's equation of motion by $x$ and rewrite:<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; $ \frac{m}{2} \frac{d^2 x^2}{dt^2} - m\xi^2 = -\frac{f_r}{2} \frac{dx^2}{dt} + Xx $<br><br>
+
+            Take the ensemble average of the equation of motion for a large number of particles:<br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp; $\left< m v^2 \right> = k_BT$<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; $\left< Xx \right> = 0$<br><br>
+               <span style="color:yellow"> Define $\frac{d\left< x^2\right> }{dt}=z$<br><br> </span> 
+               <span style="color:yellow"> &nbsp;&nbsp;&nbsp;&nbsp;  $\frac{m}{2} \frac{dz}{dt} + \frac{f_r}{2}z= k_BT$<br><br> </span> 
+
+                <span style="color:orange"> The general solution of the differential equation: &nbsp;&nbsp;&nbsp;&nbsp;  $z=\frac{2k_BT}{f_r}+C e^{-\frac{f_r}{m}t}$<br><br> </span> 
+
+        </p>
+</section>
+
+<section>
+    <p> Langevin's Derivation, cont'd </p> 
+        <p align="center" style="font-size:25px">  
+                <span style="color:white">   $z=\frac{2k_BT}{f_r}+C e^{-\frac{f_r}{m}t}$<br><br> </span> 
+        </p>
+        <p align="left" style="font-size:25px">  
+
+             The second term has a small time constant (nanoseconds for small particles) and vanishes:<br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp; $ \frac{d\left< x^2 \right> }{dt} = \frac{2k_BT}{f_r} $<br><br>
+
+             Hence, for some period of time $\tau$:<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; $\left< x^2 \right> = 2\frac{k_BT}{f_r}\tau$<br><br>
+             
+        </p>
+        <p align="center" style="font-size:25px"> 
+             <span style="color:yellow"> The diffusion coefficient is thus:<br><br> 
+                 $D=\frac{k_BT}{f_r}$<br><br></span> 
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Fick's First Law </p> 
+        <img src="assets10/Berg21.png" width="40%">
+        <p align="left" style="font-size:20px">  
+            At time $t$ there are $N(x)$ particles at position $x$, $N(x+\delta)$ particles at $x+\delta$.<br><br>
+            At time $t+\tau$, half of each set will have stepped left or right.<br><br>
+            The net number crossing to the right will be: $ -\frac{1}{2}\left[ N(x+\delta)-N(x)  \right] $<br><br>
+            To obtain the net flux, divide by the area normal to the $x$ axis and by $\tau$:<br><br>
+        </p>
+        <p align="center" style="font-size:20px">  
+            <span style="color:blue"> $ J_x=-\frac{1}{2}\left[ N(x+\delta)-N(x) \right] /A\tau $ </span> 
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Fick's First Law </p> 
+        <img src="assets10/Berg21.png" width="40%">
+        <p align="center" style="font-size:20px">  
+            <span style="color:blue"> $ J_x=-\frac{1}{2}\left[ N(x+\delta)-N(x) \right] /A\tau $ </span> 
+        </p>
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:black"> Multiply by $\delta^2/\delta^2$ and rearrange:<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $J_x=-\frac{\delta^2}{2\tau} \frac{1}{\delta}\left[ \frac{N(x+\delta)}{A\delta}- \frac{N(x)}{A\delta} \right] $<br><br> </li> 
+            <li align="left" style="font-size:20px;color:black"> Define $D = \delta^2/2\tau$ to be the diffusion coefficient:<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $ J_x=-D\frac{1}{\delta} \left[ C(x+\delta) -C(x) \right] $<br><br> </li> 
+            <li align="left" style="font-size:20px;color:black"> In the limit $\delta \rightarrow 0$,  </li> 
+        </p>
+        <p align="center" style="font-size:20px">  
+            <span style="color:red"> $ J_x=-D\frac{\partial C}{\partial x} $<br><br> </span> 
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Fick's First Law cont'd</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg22.png" width="80%">
+        <p align="center" style="font-size:20px">  
+            The flux due to a linear concentration gradient $(C_2-C_1)/b$.<br><br>
+            Net movement from right to left occurs because there are more particles at the right.<br><br>
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+            <li align="left" style="font-size:25px;color:black"> <b> Fick's First Law </b> states that the net flux (at $x$ and $t$) is proportional to the slope of the concentration function (at $x$ and $t$).<br>
+            The constant of proportionality is $D$.  </li> <br>
+            <li align="left" style="font-size:25px;color:black"> If the particles are uniformly distributed, the slope is 0<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  $\partial C/\partial x = 0$ and $J_x=0$. </li> <br>
+            <li align="left" style="font-size:25px;color:black"> If the slope is constant, i.e., if $\partial C/\partial x$ is constant, $J_x$ is constant. This happens when $C$ is linear in $x$. </li> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Fick's Second Law</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg23.png" width="80%">
+        <p align="center" style="font-size:20px">  
+            <li align="left" style="font-size:25px;color:white"> Fluxes through the faces of a box. </li> 
+<li align="left" style="font-size:20px;color:black"> The area of each face is $A$. </li> 
+<li align="left" style="font-size:20px;color:black"> The faces are normal to the $x$ axis. </li> 
+<li align="left" style="font-size:20px;color:black"> In time $\tau$, $J_x(x)A\tau$ particles enter from left  </li> 
+<li align="left" style="font-size:20px;color:black"> $J_x(x+\delta)A\tau$ particles leave from right. </li> 
+<li align="left" style="font-size:20px;color:black"> The volume of the box is $A\delta$.  </li> 
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+<br><br><br>
+            The number of particles per unit volume in the box must increase at the rate<br>
+            \begin{multline}
+                \frac{1}{\tau}\left[ C(t+\tau) - C(t) \right]=\\ = - \frac{1}{\tau}\left[ J_x(x+\delta) - J_x(x) \right]\frac{A\tau}{A\delta}\\
+                = - \frac{1}{\delta}\left[ J_x(x+\delta) - J_x(x)\right]
+            \end{multline}
+            When $\tau \rightarrow 0$ and $\delta \rightarrow 0$, we get <b>Fick's Second Law </b> <br>
+            <span style="color:blue"> 
+                \begin{align} 
+                    \frac{\partial C}{\partial t} = - \frac{\partial J_x}{\partial x}
+                \end{align} 
+            </span> 
+        </p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
