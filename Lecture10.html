@@ -132,8 +132,8 @@ tr:hover {background-color: gray;}
         </div>
         <div class="column right">
         <p align="left" style="font-size:20px">  
-            For the Poisson distribution, variance equals the mean: $\delta N^2= \bar{N}$:<br><br>
-                \[ \frac{\delta c^2}{c_0^2} = \frac{\delta N^2}{\bar{N}^2}=\frac{1}{\bar{N}}=\frac{1}{c_0 V}  \] <br><br>
+            For the Poisson distribution, variance equals the mean: $\delta N^2= \left< N \right>$:<br><br>
+                \[ \frac{\delta c^2}{c_0^2} = \frac{\delta N^2}{\left< N \right> ^2}=\frac{1}{\left< N \right> }=\frac{1}{c_0 V}  \] <br><br>
         </p>
         <p align="center" style="font-size:20px">  
            <span style="color:blue"> <b> Diffusion can help!   </b> </span> <br><br>
@@ -141,7 +141,7 @@ tr:hover {background-color: gray;}
         <p align="left" style="font-size:20px">  
             In time $T$, $M \approx T/\tau_D$ independent measurements, ($\tau_D \approx a^2/D$ is turnover time)<br><br>
             This reduces uncertainty:
-                \[ \frac{\delta c^2}{c_0^2} = \frac{1}{M\bar{N}} = \frac{1}{(T/\tau_D)c_0V}\approx \frac{1}{Dac_0T} \] 
+                \[ \frac{\delta c^2}{c_0^2} = \frac{1}{M \left< N \right> } = \frac{1}{(T/\tau_D)c_0V}\approx \frac{1}{Dac_0T} \] 
         </p>
         </div>
     </div>
@@ -432,13 +432,11 @@ tr:hover {background-color: gray;}
         <p align="center" style="font-size:20px">  
             <span style="color:blue"> $ J_x=-\frac{1}{2}\left[ N(x+\delta)-N(x) \right] /A\tau $ </span> 
         </p>
-        <p align="left" style="font-size:20px">  
             <li align="left" style="font-size:20px;color:black"> Multiply by $\delta^2/\delta^2$ and rearrange:<br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $J_x=-\frac{\delta^2}{2\tau} \frac{1}{\delta}\left[ \frac{N(x+\delta)}{A\delta}- \frac{N(x)}{A\delta} \right] $<br><br> </li> 
             <li align="left" style="font-size:20px;color:black"> Define $D = \delta^2/2\tau$ to be the diffusion coefficient:<br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $ J_x=-D\frac{1}{\delta} \left[ C(x+\delta) -C(x) \right] $<br><br> </li> 
             <li align="left" style="font-size:20px;color:black"> In the limit $\delta \rightarrow 0$,  </li> 
-        </p>
         <p align="center" style="font-size:20px">  
             <span style="color:red"> $ J_x=-D\frac{\partial C}{\partial x} $<br><br> </span> 
         </p>
@@ -449,7 +447,7 @@ tr:hover {background-color: gray;}
     <div class="row">
         <div class="column left">
         <img src="assets10/Berg22.png" width="80%">
-        <p align="center" style="font-size:20px">  
+        <p align="left" style="font-size:20px">  
             The flux due to a linear concentration gradient $(C_2-C_1)/b$.<br><br>
             Net movement from right to left occurs because there are more particles at the right.<br><br>
         </p>
@@ -460,12 +458,12 @@ tr:hover {background-color: gray;}
             </p>
         </div>
         <div class="column right">
-        <p align="left" style="font-size:25px">  
-            <li align="left" style="font-size:25px;color:black"> <b> Fick's First Law </b> states that the net flux (at $x$ and $t$) is proportional to the slope of the concentration function (at $x$ and $t$).<br>
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:black"> <b> Fick's First Law </b> states that net flux (at $x$ and $t$) is proportional to the slope of concentration (at $x$ and $t$).<br>
             The constant of proportionality is $D$.  </li> <br>
-            <li align="left" style="font-size:25px;color:black"> If the particles are uniformly distributed, the slope is 0<br>
+            <li align="left" style="font-size:20px;color:black"> For uniform distribution, slope is 0<br>
             &nbsp;&nbsp;&nbsp;&nbsp;  $\partial C/\partial x = 0$ and $J_x=0$. </li> <br>
-            <li align="left" style="font-size:25px;color:black"> If the slope is constant, i.e., if $\partial C/\partial x$ is constant, $J_x$ is constant. This happens when $C$ is linear in $x$. </li> 
+            <li align="left" style="font-size:20px;color:black"> If the slope is constant, i.e., if $\partial C/\partial x$ is constant, $J_x$ is constant. This happens when $C$ is linear in $x$. </li> 
         </p>
         </div>
     </div>
@@ -476,13 +474,13 @@ tr:hover {background-color: gray;}
     <div class="row">
         <div class="column left">
         <img src="assets10/Berg23.png" width="80%">
-        <p align="center" style="font-size:20px">  
+        <p align="left" style="font-size:20px">  
             <li align="left" style="font-size:25px;color:white"> Fluxes through the faces of a box. </li> 
-<li align="left" style="font-size:20px;color:black"> The area of each face is $A$. </li> 
-<li align="left" style="font-size:20px;color:black"> The faces are normal to the $x$ axis. </li> 
-<li align="left" style="font-size:20px;color:black"> In time $\tau$, $J_x(x)A\tau$ particles enter from left  </li> 
-<li align="left" style="font-size:20px;color:black"> $J_x(x+\delta)A\tau$ particles leave from right. </li> 
-<li align="left" style="font-size:20px;color:black"> The volume of the box is $A\delta$.  </li> 
+            <li align="left" style="font-size:20px;color:black"> The area of each face is $A$. </li> 
+            <li align="left" style="font-size:20px;color:black"> The faces are normal to the $x$ axis. </li> 
+            <li align="left" style="font-size:20px;color:black"> In time $\tau$, $J_x(x)A\tau$ particles enter from left  </li> 
+            <li align="left" style="font-size:20px;color:black"> $J_x(x+\delta)A\tau$ particles leave from right. </li> 
+            <li align="left" style="font-size:20px;color:black"> The volume of the box is $A\delta$.  </li> 
         </p>
         </div>
         <div class="column middle">
@@ -498,7 +496,7 @@ tr:hover {background-color: gray;}
                 \frac{1}{\tau}\left[ C(t+\tau) - C(t) \right]=\\ = - \frac{1}{\tau}\left[ J_x(x+\delta) - J_x(x) \right]\frac{A\tau}{A\delta}\\
                 = - \frac{1}{\delta}\left[ J_x(x+\delta) - J_x(x)\right]
             \end{multline}
-            When $\tau \rightarrow 0$ and $\delta \rightarrow 0$, we get <b>Fick's Second Law </b> <br>
+            <b>Fick's Second Law </b> is when $\tau \rightarrow 0$ and $\delta \rightarrow 0$ <br>
             <span style="color:blue"> 
                 \begin{align} 
                     \frac{\partial C}{\partial t} = - \frac{\partial J_x}{\partial x}
@@ -507,6 +505,283 @@ tr:hover {background-color: gray;}
         </p>
         </div>
     </div>
+</section>
+
+<section>
+    <p> The Diffusion Equation </p> 
+        <p align="left" style="font-size:25px">  
+            <span style="color:yellow"> <b> Fick's First Law in three dimensions </b>  </span> 
+            We have $J_x=-D\partial C/\partial x$, $J_y=-D\partial C/\partial y$, and $J_z=-D\partial C/\partial z$. These are components of a flux vector:
+            \begin{align}
+                \mathbf{J}=-D\boldsymbol{\nabla}C
+            \end{align}
+            <br>
+            <span style="color:yellow"> <b> Fick's Second Law in three dimensions </b>  </span> 
+            We have $\partial C/ \partial t = -\left( \partial J_x/\partial x + \partial J_y/\partial y + \partial J_z/\partial z\right)$:
+            \begin{align}
+                \frac{\partial C}{\partial t}= -\boldsymbol{\nabla}\cdot \mathbf{J}
+            \end{align}
+            <br>
+            <span style="color:yellow"> <b> The Diffusion Equation </b>  </span> 
+            Combining produces the 3D diffusion equation:
+            <span style="color:orange"> 
+            \begin{align} 
+                \frac{\partial C}{\partial t}= D\boldsymbol{\nabla}^2 C
+            \end{align} 
+            </span> 
+</p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The spherical adsorber</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg26.png" width="80%">
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:black"> Spherical adsorber of radius $a$ </li> 
+            <li align="left" style="font-size:20px;color:black"> Infinite medium containing particles at concentration $C_0$. </li> 
+            <li align="left" style="font-size:20px;color:black"> Dashed arrows are lines of flux. </li> 
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            If the problem is spherically symmetric, the flux is radial,
+            \begin{align*}
+                J_r=-D\partial C/\partial r
+            \end{align*}
+
+            and
+
+            \begin{align*}
+                \frac{\partial C}{\partial t} = D \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial C}{\partial r} \right)
+            \end{align*}
+            <br><br>
+            The concentration at $r=a$ is 0.<br>
+            The concentration at $r=\infty$ is $C_0$.<br><br>
+            <span style="color:blue"> With these boundary conditions, the diffusion equation has the solution: 
+            \begin{align*}
+                C(r)=C_0\left( 1-\frac{a}{r} \right)
+            \end{align*}</span> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The spherical adsorber</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg26.png" width="80%">
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:black"> Spherical adsorber of radius $a$ </li> 
+            <li align="left" style="font-size:20px;color:black"> Infinite medium containing particles at concentration $C_0$. </li> 
+            <li align="left" style="font-size:20px;color:black"> Dashed arrows are lines of flux. </li> 
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            Net migration (flux) of molecules is radially inward: 
+                \begin{align*}
+                    J_r = -D C_0 \frac{a}{r^2}
+                \end{align*}<br><br>
+            The particles are adsorbed by the sphere at a rate equal to the area, $4\pi a^2$ times the inward flux $-J_r(a)$:
+                \begin{align*}
+                    I=4 \pi D a C_0
+                \end{align*}<br><br>
+            Adsorption rate, $I$, is the diffusion current.<br><br>
+        </p>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Theory of random walks - George Poly&aacute; </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/800px-Random_walk_25000_not_animated.svg.png" width="100%"> 
+            <p align="left" style="font-size:20px">  
+                A random walker in one or two dimensions always returns to its origin.
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+        <img src="assets10/Walk3d_0.png" width="70%"> 
+            <p align="left" style="font-size:20px">  
+                A random walker in three dimensions can escape and <em>never </em> return to the origin.
+            </p>
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Probability of capture </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg31.png" width="100%">
+            <p align="left" style="font-size:20px">  
+                <li align="left" style="font-size:20px;color:black"> Spherical shell source, radius $b$ </li> 
+                <li align="left" style="font-size:20px;color:black"> Spherical adsorber, radius $a$  </li> 
+                <li align="left" style="font-size:20px;color:black"> Spherical shell adsorber, radius $c$ </li> 
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            <b> Suppose a particle is released near a spherical adsorber of radius $a$ at a point $r=b>a$?   </b> 
+            <li align="left" style="font-size:20px;color:black"> What is the probability that the particle will be adsorbed at $r=a$ rather than wander away? </li> <br>
+            <li align="left" style="font-size:20px;color:black"> Particles released at $r=b$ move inward and are adsorbed at $r=a$ at rate $I_{in}$ or move outward and are adsorbed at $r=c$ at rate $I_{out}$. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> Steady-state concentration rises from 0 at $r=a$ to $C_m$ at $r=b$ and falls back to 0 at $r=c$  </li> <br>
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Probability of capture, cont'd </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg31.png" width="100%">
+            <p align="left" style="font-size:20px">  
+                <li align="left" style="font-size:20px;color:black"> Spherical shell source, radius $b$ </li> 
+                <li align="left" style="font-size:20px;color:black"> Spherical adsorber, radius $a$  </li> 
+                <li align="left" style="font-size:20px;color:black"> Spherical shell adsorber, radius $c$ </li> 
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            <b> Steady-state diffusion equation </b> <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $ \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial C}{\partial r} \right) =0$<br><br>
+            <b> Boundary conditions </b> <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $C(r=a) = 0$<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $C(r=b) = C_m$<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $C(r=c) = 0$<br><br>
+
+            <b> Separate solutions in separate compartments: </b> <br><br>
+            
+            if $a \leq r \leq b$:<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; $ C(r) = \frac{C_m}{1-a/b}\left( 1-\frac{a}{r}\right) $ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; 
+            $ J_r(r) = \frac{-DC_m}{1-a/b}\frac{a}{r^2} $<br><br>
+
+            if $b \leq r \leq c$:<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; $ C(r) = \frac{C_m}{c/b-1}\left( \frac{c}{r}-1\right) $ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; 
+            $ J_r(r) = \frac{DC_m}{c/b-1}\frac{c}{r^2} $<br><br> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Probability of capture, cont'd </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg31.png" width="100%">
+            <p align="left" style="font-size:20px">  
+                <li align="left" style="font-size:20px;color:black"> Spherical shell source, radius $b$ </li> 
+                <li align="left" style="font-size:20px;color:black"> Spherical adsorber, radius $a$  </li> 
+                <li align="left" style="font-size:20px;color:black"> Spherical shell adsorber, radius $c$ </li> 
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            The diffusion current from the spherical shell source to the inner adsorber is<br>
+                \begin{align}
+                    I_{in} = 4 \pi DC_m \frac{a}{1-a/b}
+                \end{align}<br>
+            The diffusion current from the spherical shell source to the outer adsorber is<br>
+                \begin{align}
+                    I_{out} = 4 \pi DC_m \frac{c}{c/b-1}
+                \end{align}<br>
+            The probability that a particle released at $r=b$ will be adsorbed at $r=a$ is the ratio:<br>
+                \begin{align}
+                    \frac{I_{in}}{I_{in}+I_{out}} = \frac{a(c-b)}{b(c-a)}
+                \end{align}<br>
+            <span style="color:blue"> In the limit $c\rightarrow \infty$, the probability of being adsorbed is $a/b$. </span> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Sedimentation of small particles </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/exponential.png" width="80%">
+        <p align="left" style="font-size:20px">  
+            The density of particles suspended in a fluid in a gravitational field is given by the Boltzmann distribution:
+            \[ \rho (z) = \rho_0 e^{-mgz/k_B T} \]
+            because $E=mgz$
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <img src="assets10/sedimentation.png" width="80%">
+        <p align="left" style="font-size:20px">  
+            Each particle sediments at a velocity given by the balance between gravitational force ($\mathbf{F}=m\mathbf{g}$) and viscous force ($\mathbf{F}=- f_r\mathbf{V}$).
+        </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Einstein relation </p> 
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:white"> Upward flux due to diffusion is given by Fick's First Law </li> 
+        </p>
+        <p align="left" style="font-size:20px">  
+            \[ J_z^{diff} = D \times \frac{mg}{k_B T} \times \rho_0 e^{-\frac{mgz}{k_B T} }\]<br>
+        </p>
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:white"> Downward flux due to sedimentation is given by the product of velocity and particle density </li> 
+        </p>
+        <p align="left" style="font-size:20px">  
+            \[ J_z^{sed} = - \frac{mg}{f_r} \times \rho_0 e^{-\frac{mgz}{k_B T} } \]<br>
+        </p>
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:white"> At steady state, $J_z^{diff}+J_z^{sed}=0$:<br> </li> 
+        </p>
+        <p align="left" style="font-size:20px">  
+                \[ D \times \frac{mg}{k_B T} \times \rho_0 e^{-\frac{mgz}{k_B T} } - \frac{mg}{f_r} \times \rho_0 e^{-\frac{mgz}{k_B T} }=0 \]
+        </p>
+        <p align="center" style="font-size:25px">  
+            <span style="color:orange"> 
+            Hence,
+                $\frac{D}{k_B T} - \frac{1}{f_r} = 0$ &nbsp;&nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp;&nbsp; $D=\frac{k_B T}{f_r}$ </span> 
+        </p>
 </section>
 
 
