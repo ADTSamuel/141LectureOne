@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_13</p> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Precise Adaptation </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets12/BergPhysicist2.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> Impulse response to attractant in wild-type cells. </li> 
+            <li align="left" style="font-size:20px;color:black"> A change in bias of 0.23 caused by a change in 'fraction of receptor bound' of 0.0042. </li> 
+            <li align="left" style="font-size:20px;color:black"> Bias unerringly returns to prestimulus value </li> 
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Signal transduction from receptors to motors </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets13/Alon1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:white"> A signaling cascade allows chemoreceptors to communicate with flagellar motors. </li> <br>
+            <li align="left" style="font-size:20px;color:white"> Negative feedback counteracts signaling to allow cells to adapt </li> <br>
+            <li align="left" style="font-size:20px;color:white"> When more attractant is bound, methyl groups are added to receptors by the enzyme CheR </li> <br>
+            <li align="left" style="font-size:20px;color:white"> When less attractant is bound, methyl groups are removed by the enzyme CheB </li> <br>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Signal transduction from receptors to motors </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets13/Alon1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:white"> Chemoreceptors form complexes inside the cells with the kinase <b style="color:yellow">CheA</b> and <b style="color:yellow">CheW</b></li> 
+            <li align="left" style="font-size:20px;color:white"> <b style="color:yellow">CheA</b> phosphorylates <b style="color:yellow">CheY</b>, a diffusible messenger  </li> 
+            <li align="left" style="font-size:20px;color:white"> The phosphorylated form of <b style="color:yellow">CheY</b> interacts with the flagellar motors to induce tumbles. </li> 
+            <li align="left" style="font-size:20px;color:white"> <b style="color:yellow">CheY</b> is dephosphorylated by <b style="color:yellow">CheZ</b> . </li> 
+            <li align="left" style="font-size:20px;color:white"> Binding of attractants to receptors decreases the rate of <b style="color:yellow">CheY</b> phosphorylation $\rightarrow$ tumbling drops. </li> 
+            <li align="left" style="font-size:20px;color:white"> Adaptation involves changes in the methylation of chemoreceptors. </li> 
+            <li align="left" style="font-size:20px;color:white"> Methylation increases the rate of <b style="color:yellow">CheY</b> phosphorylation </li> 
+            <li align="left" style="font-size:20px;color:white"> <b style="color:yellow">CheR</b> and <b style="color:yellow">CheB</b>, add and remove methyl groups </li> 
+            <li align="left" style="font-size:20px;color:white"> To adapt, methylation must rise to overcome the suppression of receptor activity caused by the attractant binding. </li> 
+            <li align="left" style="font-size:20px;color:white"> <b style="color:yellow">CheA</b> enhances the demethylating activity of <b style="color:yellow">CheB</b> by phosphorylating <b style="color:yellow">CheB</b>  </li> 
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Adaptation mutants </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets13/Alon1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <img src="assets13/Segall5.png" width="80%">
+            <p align="center" style="font-size:20px">  
+                 Impulse response (A, above) <br>
+                and step response (B, below) <br>
+                in strains deleted for <em>cheRcheB</em>  
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Perfect adaptation </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets13/Alon2.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> Tumbling frequency as a function of time </li> <br>
+            <li align="left" style="font-size:20px;color:black"> Circles: cells stimulated at time t = 0 by mixing with saturating attractant. </li><br>
+            <li align="left" style="font-size:20px;color:black"> Squares: unstimulated cells.   </li> <br>
+            <li align="left" style="font-size:20px;color:black"> Precision of adaptation is the ratio between the steady-state tumbling frequency of unstimulated cells (full horizontal line) and stimulated cells (dashed horizontal line).  </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Adaptation is robust to varying CheR concentration </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets13/Alon3.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> Precision of adaptation, defined as the ratio between the steady-state tumbling frequency of unstimulated cells and stimulated cells </li> <br><br>
+            <li align="left" style="font-size:20px;color:black"> Average steady-state tumbling frequency of unstimulated cells (open squares, right scale), and average adaptation time to a step-like stimulation with aspartate (open circles, left scale). </li> 
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <p> Adaptation by methylation </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets13/Barkai1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:white"> Consider an enzyme, $E$, which is sensitive to an external signal $l$, such as a ligand. </li> 
+            <li align="left" style="font-size:20px;color:white"> Each enzyme molecule is at equilibrium between two states: an <span style="color:orange">active state</span>, in which it catalyses a reaction, and an <span style="color:orange">inactive state</span>, in which it does not.  </li> 
+            <li align="left" style="font-size:20px;color:white"> Modification of $E$ affects the probabilities of the active and inactive states, and can compensate for the effect of the ligand. </li> 
+            <li align="left" style="font-size:20px;color:white"> In general, $A(l)=\alpha (l) E  + \alpha_m (l) E_m$ where:<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &#8226; $E_m$ is concentration of modified enzyme<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &#8226; $E$ is concentration of unmodified enzyme<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &#8226; $\alpha_m(l)$ probability of active modified state <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &#8226; $\alpha(l)$ probability of active unmodified state <br></li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Robustness of adaptation </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets13/Barkai2.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> The precision of adaptation, $P$ to a step-like addition of saturating amount of attractant as a function of the total parameter variation $k$ </li> <br><br><br>
+            <li align="left" style="font-size:20px;color:black"> Adaptation time as a function of the total parameter variation $k$ </li> 
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> The effect of activity-dependent negative feedback </p> 
+            <li align="left" style="font-size:20px;color:white"> Consider a system for which only the modified enzyme can be active </li> 
+            <li align="left" style="font-size:20px;color:white"> The enzyme $R$, which catalyses the modification reaction $E \rightarrow E_m$ works at saturation </li> 
+            <li align="left" style="font-size:20px;color:white"> The enzyme $B$, which catalyses the reverse-modification reaction $E_m \rightarrow E$ can only bind to active enzymes </li> 
+            <li align="left" style="font-size:20px;color:white"> The reverse modification rate is a simple function of the activity: <br>
+            $ \frac{dE_m}{dt}=V_{max}^R - V_{max}^B \frac{A}{A+K_B} $</li> 
+            <li align="left" style="font-size:20px;color:white"> The system activity is continuously compared to a reference steady-state value 
+                \[ A^{st} = K_b \frac{V_{max}^R}{V_{max}^B - V_{max}^B} \]</li> 
+            <li align="left" style="font-size:20px;color:yellow"> For $A &lt; A^{st}$ the modification increases, leading to an increase in $A$ </li> 
+            <li align="left" style="font-size:20px;color:yellow"> For $A &gt; A^{st}$ the modification decreases, leading to a decrease in $A$ </li> 
+            <li align="left" style="font-size:20px;color:orange"> The system always returns to its steady-state value </li> 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
