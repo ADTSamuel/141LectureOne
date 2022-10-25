@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_11</p> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Ideal measurement devices </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets11/Aquino1.png" width="80%">
+        <p align="left" style="font-size:25px">  
+             The perfect monitor is permeable to ligand molecules and estimates concentration by counting the molecules in its volume during time T . 
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <img src="assets11/Aquino2.png" width="80%">
+        <p align="left" style="font-size:25px">  
+            The perfect absorber estimates the ligand concentration from the number of molecules incident on its surface during time T
+        </p>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Patchy receptors </p> 
+        <img src="assets11/BP1.png" width="60%">
+        <p align="center" style="font-size:25px">  
+            <li align="left" style="font-size:20px;color:black"> Path of a diffusing molecule that touches the surface of a cell at a sequence of points A, B, . . . F. </li> 
+            <li align="left" style="font-size:20px;color:black"> The cell has radius $a$. The receptor patches, shown shaded, are of radius $s$. </li> 
+            <li align="left" style="font-size:20px;color:black"> A and B constitute independent tries at hitting a patch, but C and D do not. </li> 
+            <li align="left" style="font-size:20px;color:black"> Note between A and B the excursion of distances perpendicular to the surface of the sphere. </li> 
+        </p>
+</section>
+
+<section>
+    <p> Patchy receptor calculations </p> 
+        <p align="left" style="font-size:25px">  
+            The probability $P$, that a molecule now located a distance $s$ from the sphere of radius $a$ will hit the surface of the sphere at least once before escaping to infinity is equivalent to the ``capture probability'' which we now rewrite as:
+                \[ P_s = \frac{a}{a+s} \]<br><br>
+            The probability that a molecule now at $r = a + s$ will execute exactly $n$ excursions to the surface, separated by reappearances at $r = a + s$ and followed by diffusion to infinity, is $P_s^n(1-P_s)$. The average number of excursions is:
+                \[  \bar{n} = \sum_{n=0}^\infty n P_s^n (1-P_s) = \frac{P_s}{1-P_s}=\frac{a}{s} \] 
+        </p>
+</section>
+
+<section>
+    <p> Patchy receptor calculations </p> 
+        <p align="left" style="font-size:25px">  
+             The probability of not hitting a receptor patch in a single random encounter is $\beta = 1-(Ns^2/4a^2)$.<br><br>
+             If the contacts we have enumerated are independent tries, the probability that a molecule starting at $r = a + s$ survives all subsequent contacts until it escapes to infinity is:
+                 \begin{align*}
+                     P_{esc} = \sum_{n=0}^\infty \beta^n P_s^n (1-P_s) &=\frac{1-P_s}{1-\beta P_s}\\
+                     &= \frac{4a}{4a+N_s}
+                 \end{align*}  <br>
+             Since $1-P_{esc}$ is the fraction of all arriving molecules that ultimately are captured, we have the resulting current:<br>
+                 <span style="color:orange"> 
+                    \begin{align*} 
+                        \frac{J}{J_{max}}=\frac{Ns}{4a+Ns} 
+                    \end{align*} 
+                </span> 
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Understanding diffusive flux by solving the diffusion equation </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg26.png" width="80%">
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:black"> Consider a spherical cell of radius $a$ immersed in an unbounded medium. </li> 
+            <li align="left" style="font-size:20px;color:black"> The medium contains in low concentration some molecules with diffusion constant $D$. </li> 
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:black"> The local concentration, $c(\boldsymbol{x},t)$ will be expressed in molecules per unit volume.<br><br> </li> 
+            <li align="left" style="font-size:20px;color:black"> The spatial and temporal variation of $c(\boldsymbol{x},t)$ is governed by the diffusion equation 
+                \begin{align}
+                    D\nabla^2 c = \frac{\partial c}{\partial t}
+                \end{align}</li> 
+            <li align="left" style="font-size:20px;color:black"> In steady state, the current $I$ of molecules to the cell, in molecules per second, is given by the product of surface area $4 \pi a^2$ and the flux, $J$, from Fick's First Law: 
+                \begin{align}
+                    I=4 \pi a D c_\infty
+                \end{align}
+            where $c_\infty$ is the concentration far from the cell.</li> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section> 
+    <p> Using electrostatics to solve diffusion problems </p>
+    <div class="row">
+        <div class="column left">
+            <li align="left" style="font-size:25px;color:white"> Laplace's Equation for charge-free space 
+                \begin{align*}
+                    \nabla^2 \phi = 0
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:white"> Electric field vector 
+                \begin{align*}
+                    \boldsymbol{E} = \boldsymbol{\nabla}\phi
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:white"> Total electric charge $Q$ on a\\surface: 
+                \begin{align*}
+                    Q=\frac{1}{4\pi}\int_S E \cdot d \boldsymbol{s}
+                \end{align*}</li> 
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:25px;color:white"> Time-independent diffusion equation: 
+                \begin{align*}
+                    \nabla^2 c = 0
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:white"> Diffusive current density: 
+                \begin{align*}
+                    \boldsymbol{J} = -D \boldsymbol{\nabla}c
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:white"> Total diffusive current entering closed surface: 
+                \begin{align*}
+                    I=\int_S \boldsymbol{J} \cdot d \boldsymbol{s}
+                \end{align*}</li> 
+        </div>
+    </div>
+        <p align="center" style="font-size:25px;background-color:black;color:orange">  
+            $I=4 \pi C D c_\infty$ where $C$ is the electrical capacitance of an object in cgs units
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Counting molecules using a patchy sphere </p> 
+        <img src="assets11/patchysphere.png" width="60%">
+        <p align="center" style="font-size:25px">  
+            TEXT        
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Counting molecules using a patchy sphere </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets11/patchysphere.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:25px;color:blue"> Capacitance of a sphere $r=a$: 
+                \begin{align*}
+                    C=a
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:blue"> Total flux to sphere: 
+                \begin{align*}
+                    I = 4 \pi D a  c_\infty
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:red"> Capacitance of a thin disk $r=s$: 
+                \begin{align*}
+                    C=2s/\pi
+                \end{align*}</li> 
+            <li align="left" style="font-size:25px;color:red"> Total flux to thin disk: 
+                \begin{align*}
+                    I = 8 D s  c_\infty
+                \end{align*}</li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Counting molecules using a patchy sphere </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets11/patchysphere.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> Capacitance of an insulating sphere, $r=a$, with $N$ conducting patches of radius $s$: 
+                \begin{align*}
+                    C=\frac{Nsa}{Ns + \pi a}
+                \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black"> Flux to the patchy sphere: 
+                \begin{align*}
+                    I &= 4 \pi D c_\infty \frac{Nsa}{Ns + \pi a}\\
+                    &= I_{max}\frac{Ns}{Ns + \pi a}
+                \end{align*}</li> 
+        </div>
+    </div>
+        <p align="center" style="font-size:20px;background-color:black;color:orange">  
+<br>
+            When is current half maximal? 
+                \begin{align*}
+                    I\left(N=\frac{\pi a}{s}\right)=\frac{1}{2}
+                \end{align*}
+<br>
+        </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> TITLE</p>
+    <div class="row">
+        <div class="column left">
+            <script type="text/tikz">
+                \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) -- (8,6) -- (0,6) -- (0,0);
+                    \draw[blue!40!white,line width=01mm] (2,2) -- (2,3);
+                    \draw[blue!40!white,line width=01mm] (6,2) -- (6,3);
+                    \draw[blue!40!white,line width=01mm] (5.5,3.5) arc(180:360:0.5) ;
+                    \draw[blue!40!white,line width=01mm] (1.5,3.5) arc(180:360:0.5);
+                    \fill[blue!40!white] (0,0) rectangle (8,2);
+                    \fill[red] (2,3.5) circle (2mm);
+                    \fill[black] (6,5.5) circle (2mm);
+                    \fill[black] (1,2.5) circle (2mm);
+                    \fill[black] (4,3) circle (2mm);
+                    \fill[black] (2.5,4.5) circle (2mm);
+                    \fill[black] (7.5,2.8) circle (2mm);
+                \end{tikzpicture}
+            </script>
+                <br>
+                <li align="left" style="font-size:20px;color:black"> Time-averaged occupancy of a receptor is given by a single dissociation constant, $K$ </li> 
+                <li align="left" style="font-size:20px;color:black"> In equilibrium at concentration $c$, the expected average occupancy is: 
+                    \[ \left< p \right> =\frac{c}{c+c_{1/2}} \] </li> 
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+                <b> Law of Mass Action </b> <br><br>
+                \begin{align*}
+                    R + L \leftrightarrow R \cdot L
+                \end{align*}
+
+                \begin{align*}
+                    \frac{d[R \cdot L]}{dt} = k_{on}[R][L] - k_{off}[R \cdot L]
+                \end{align*}
+
+                \begin{align*}
+                    \bar{p} &= \frac{[R \cdot L]}{[R] + [R \cdot L]}\\
+                    &= \frac{[L]}{[L] + k_{off}/k_{on}}
+                \end{align*}
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> An entropic view of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+            <p align="left" style="font-size:25px">  Physics of the unbound state </p> 
+            <script type="text/tikz">
+                \begin{tikzpicture}
+                    \draw[step=0.5 cm,gray,very thin] (0,0) grid (8,6);
+                    \draw[blue!40!white,line width=01mm] (4,0) -- (4,0.5);
+                    \draw[blue!40!white,line width=01mm] (3.5,1) arc(180:360:0.5);
+                    \fill[black] (4,2) circle (1mm);
+                    \fill[black] (0.0,1) circle (1mm);
+                    \fill[black] (3,5) circle (1mm);
+                    \fill[black] (4,3) circle (1mm);
+                    \fill[black] (7,4) circle (1mm);
+                    \fill[black] (6,0) circle (1mm);
+                    \fill[black] (2,5) circle (1mm);
+                    \fill[black] (1,3) circle (1mm);
+                    \fill[black] (8,5) circle (1mm);
+                    \fill[black] (5,4) circle (1mm);
+                \end{tikzpicture}
+            </script>
+                    <br>
+                    <li align="left" style="font-size:20px;color:black"> Energy  $ = L\varepsilon_{sol}$ </li> <br>
+                    <li align="left" style="font-size:20px;color:black"> Multiplicity  $ = \frac{\Omega!}{L!(\Omega - L )!} \approx \frac{\Omega^L}{L!}$ </li> <br>
+                    <li align="left" style="font-size:20px;color:black"> Weight $= \frac{\Omega^L}{L!}e^{-\beta L\varepsilon_{sol}}$ </li> <br>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:25px">  Physics of the bound state </p> 
+            <script type="text/tikz">
+                \begin{tikzpicture}
+                    \draw[step=0.5 cm,gray,very thin] (0,0) grid (8,6);
+                    \draw[blue!40!white,line width=01mm] (4,0) -- (4,0.5);
+                    \draw[blue!40!white,line width=01mm] (3.5,1) arc(180:360:0.5);
+                    \fill[red] (4,1) circle (1mm);
+                    \fill[black] (1,1) circle (1mm);
+                    \fill[black] (3,6) circle (1mm);
+                    \fill[black] (5,2) circle (1mm);
+                    \fill[black] (7,3) circle (1mm);
+                    \fill[black] (7,0) circle (1mm);
+                    \fill[black] (2,4) circle (1mm);
+                    \fill[black] (0,3) circle (1mm);
+                    \fill[black] (8,6) circle (1mm);
+                    \fill[black] (6,4) circle (1mm);
+                \end{tikzpicture}
+            </script>
+                    <br>
+                    <li align="left" style="font-size:20px;color:black"> Energy $ = (L-1)\varepsilon_{sol}+\varepsilon_b$ </li> <br>
+                    <li align="left" style="font-size:20px;color:black"> Multiplicity  $ = \frac{\Omega!}{(L-1)!(\Omega - L +1 )!} \approx \frac{\Omega^{L-1}}{(L-1)!}$ </li> <br>
+                    <li align="left" style="font-size:20px;color:black"> Weight $= \frac{\Omega^{L-1}}{(L-1)!}e^{-\beta[(L-1)\varepsilon_{sol}+\varepsilon_b]}$ </li> <br>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <p> Entropic view of receptor occupancy </p> 
+            <li align="left" style="font-size:20px;color:yellow"> The probability of binding is the weight of the bound states divided by the sum of the weights of the bound and unbound states: 
+                 \begin{align*}
+                     \bar{p} = \frac{\frac{\Omega^{L-1}}{(L-1)!}e^{-\beta[(L-1)\varepsilon_{sol}+\varepsilon_b]}}{\frac{\Omega^{L-1}}{(L-1)!}e^{-\beta[(L-1)\varepsilon_{sol}+\varepsilon_b]} + \frac{\Omega^L}{L!}e^{-\beta L\varepsilon_{sol}}}
+                 \end{align*}</li> <br>
+            <li align="left" style="font-size:20px;color:orange"> Multiply top and bottom by $(L!/\Omega^L)e^{\beta L \varepsilon_{sol}}$: 
+                 \begin{align*}
+                     \bar{p} = \frac{(L/\Omega)e^{-\beta \Delta \varepsilon}}{1 + (L/\Omega)e^{-\beta \Delta \varepsilon}}
+                 \end{align*}
+                 where $\Delta \varepsilon = \varepsilon_b - \varepsilon_{sol}$.</li> <br>
+            <li align="left" style="font-size:20px;color:magenta"> The overall volume of the box is $V_{box}$, so we can write ligand concentration as $c=L/\Omega V_{box}$. This results in: 
+                 \begin{align*}
+                     \bar{p} = \frac{(c/c_0)e^{-\beta \Delta \varepsilon}}{1+ (c/c_0)e^{-\beta \Delta \varepsilon}}
+                 \end{align*}
+                 where $c_0=1/V_{box}$.</li> <br>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Entropic view of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+            <script type="text/tikz">
+                \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) -- (8,6) -- (0,6) -- (0,0);
+                    \draw[blue!40!white,line width=01mm] (2,2) -- (2,3);
+                    \draw[blue!40!white,line width=01mm] (6,2) -- (6,3);
+                    \draw[blue!40!white,line width=01mm] (5.5,3.5) arc(180:360:0.5) ;
+                    \draw[blue!40!white,line width=01mm] (1.5,3.5) arc(180:360:0.5);
+                    \fill[blue!40!white] (0,0) rectangle (8,2);
+                    \fill[black] (2,3.5) circle (2mm);
+                    \fill[black] (6,5.5) circle (2mm);
+                    \fill[black] (1,2.5) circle (2mm);
+                    \fill[black] (4,3) circle (2mm);
+                    \fill[black] (2.5,4.5) circle (2mm);
+                    \fill[black] (7.5,2.8) circle (2mm);
+                \end{tikzpicture}
+            </script>
+            <img align="left" src="python/poissonreceptor.png" width="70%">
+            <p align="center" style="font-size:20px">  
+                Receptor occupancy over time
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> An attached molecule has a constant probability per unit time of detaching. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> If the probability of detachment in $dt$ is $dt/\tau_b$, the mean occupancy time is $\tau_b$ </li> <br>
+            <li align="left" style="font-size:20px;color:black"> If an empty receptor is an adsorber, the current to it is $4Dsc$. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> At steady state: 
+                \begin{align*}
+                    \bar{p}/\tau_b = 4(1-\bar{p})Dsc
+                \end{align*}</li>
+            <li align="left" style="font-size:20px;color:black"> Since $\bar{p}=1/2$ when $c=c_{1/2}$ 
+                \begin{align*}
+                    \tau_b=(4Dsc_{1/2})^{-1}
+                \end{align*}</li> <br>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Entropic view of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+        <img src="python/poissonreceptor.png" width="80%">
+        <p align="center" style="font-size:20px">  
+            Receptor occupancy over time
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> If the only information about $c$ is the function $p(t)$ for one receptor recorded for a time $T$, the cell can extract this information by forming its average: 
+                \begin{align*}
+                    p_T = \frac{1}{T}\int_{t_1}^{t_1+T} p(t)dt
+                \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black"> If $p_T$ is taken as the $\bar{p}$, it can be used to derive $c$: 
+                \begin{align*}
+                    c/c_{1/2} = p_T/(1-p_T)
+                \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black"> Fractional error in measuring concentration is related to mean and variance in receptor occupancy: 
+                \begin{align*}
+                    \frac{\delta c}{c}=\frac{\delta \bar{p}}{\bar{p}(1-\bar{p})}
+                \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black"> Variance in measurements of $\bar{p}$ can be computed from the autocorrelation function of $p(t)$ 
+                \begin{align*}
+                    G(\tau) = \left< p(t)p(t+\tau) \right>
+                \end{align*}</li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The autocorrelation function of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+            <img src="python/poissonreceptor.png" width="80%">
+            <p align="center" style="font-size:20px">  
+                Receptor occupancy over time<br><br>
+                $p_T$ is the average over the observation time:
+                    \begin{align*}
+                        p_T = \frac{1}{T}\int_{t_1}^{t_1+T} p(t)dt
+                    \end{align*}
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black">
+                A useful tool is the autocorrelation function of $p(t)$:
+                    \begin{align*}
+                        G(\tau) = \left< p(t)p(t+\tau) \right>
+                    \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black">
+                $G(\tau)$ is an even function of $\tau$: $G(\tau)=G(-\tau)$ </li> 
+            <li align="left" style="font-size:20px;color:black">
+                From the definition of $p_T$
+                    \begin{align*}
+                        p_T^2=\frac{1}{T^2}\int_{t_1}^{t_1+T}dt'\int_{t_1}^{t_1+T}p(t)p(t')dt
+                    \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black">
+                Introducing the autocorrelation function, we obtain:
+                    \begin{align*}
+                        \left< p_T^2 \right> = \frac{1}{T^2}\int_{0}^{T}dt'\int_{0}^{T}G(t'-t)dt
+                    \end{align*}</li>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The autocorrelation function of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+            <img src="python/poissonreceptor.png" width="80%">
+            <p align="center" style="font-size:20px">  
+                Receptor occupancy over time<br><br>
+                $p_T$ is the average over the observation time:
+                    \begin{align*}
+                        p_T = \frac{1}{T}\int_{t_1}^{t_1+T} p(t)dt
+                    \end{align*}
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black">
+                Consider a large number $n$ pairs of observations, one at $t$ the other at $t+\tau$.
+                </li> <br>
+            <li align="left" style="font-size:20px;color:black">
+                Segregate the pairs in which the first observation is bound, i.e., $p(t)=1$. </li><br>
+            <li align="left" style="font-size:20px;color:black">
+                $G(\tau)$ is an even function of $\tau$: $G(\tau)=G(-\tau)$ <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &#8226; If $n$ is large, there will be $\sim n\bar{p}$ pairs <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &#8226; The number with $p(t+\tau)=1$ will be $nG(\tau)$ <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &#8226; Only for ``1,1'' pairs, $p(t)p(t+\tau) \neq 0$ </li><br>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The autocorrelation function of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+            <img src="python/poissonreceptor.png" width="80%">
+            <p align="center" style="font-size:20px">  
+                Receptor occupancy over time<br><br>
+                $p_T$ is the average over the observation time:
+                    \begin{align*}
+                        p_T = \frac{1}{T}\int_{t_1}^{t_1+T} p(t)dt
+                    \end{align*}
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black">
+                Shift the time of the second observation from $t+\tau$ to $t+\tau + d\tau$ <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; 
+                    &#8226; Some ``1,1'' pairs become ``1,0'' pairs:<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ nG d\tau/\tau_b $<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; 
+                    &#8226; Some ``1,0'' pairs become ``1,1'' pairs:<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $ n(\bar{p}-G)[\bar{p}/(1-\bar{p})]d\tau/\tau_b $ </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The autocorrelation function of receptor occupancy </p>
+    <div class="row">
+        <div class="column left">
+            <img src="python/poissonreceptor.png" width="80%">
+            <p align="center" style="font-size:20px">  
+                Receptor occupancy over time<br><br>
+                $p_T$ is the average over the observation time:
+                    \begin{align*}
+                        p_T = \frac{1}{T}\int_{t_1}^{t_1+T} p(t)dt
+                    \end{align*}
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> We should now have $nG(\tau + d\tau)$ ``1,1'' pairs, which requires:
+                \[ dG = -G d\tau/\tau_b + (\bar{p}-G)[\bar{p}/(1-\bar{p})]d\tau/\tau_b \] </li>
+            <li align="left" style="font-size:20px;color:black"> Integrating and requiring that $G(0) = \bar{p}$ 
+                \[ G(\tau) = \bar{p}^2 + \bar{p}(1-\bar{p})\exp{\left[ -\frac{\lvert \tau \rvert}{(1-\bar{p})\tau_b}\right]}  \]</li>
+            <li align="left" style="font-size:20px;color:black"> Assuming $T \gg \tau_b$: 
+                \[ \left< p_T^2 \right> - \left< p_T \right>^2 = \frac{2\bar{p}(1-\bar{p})^2\tau_b}{T} \]</li> 
+            <li align="left" style="font-size:20px;color:black"> For the rms error in $\bar{c}$ we get 
+                \[ \frac{\Delta c_{rms}}{\bar{c}} = \sqrt{\frac{2\tau_b}{T\bar{p}}} =  \sqrt{\frac{2}{\nu}}\]
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; where $\nu = 4Ds\bar{c}(1-\bar{p})T$</li>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
