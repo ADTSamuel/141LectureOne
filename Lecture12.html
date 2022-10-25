@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_12</p> 
+</section>
+
+
+<section>
+    <p> Swimming Cells motion </p> 
+        <video loop controls='true' width='60%' height='60%' src="assets12/swimmingbacteria.mp4" data-autoplay></video>
+        <p align="center" style="font-size:25px">  
+            Swimming <em>E. coli</em>, phase contrast microscopy.        
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Why are runs at least one second long?</p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg1988Figure2.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+            <li align="left" style="font-size:20px;color:black"> The cell is $10^{-4}$ cm in length. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> The diffusion coefficient of a small molecule is $D= 10^{-5} \text{cm}^2 \text{s}^{-1}$ </li> <br>
+            <li align="left" style="font-size:20px;color:black"> The time for a molecule to diffuse from one end of a cell to another is $\approx$ 1 millisecond. </li> <br>
+            <li align="left" style="font-size:20px;color:blue"> The cell outruns diffusion when $v t > \sqrt{D t}$, or roughly one second. </li> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Why are runs at least one second long?</p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets10/Berg1988Figure2.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <p align="left" style="font-size:25px">  
+            <li align="left" style="font-size:20px;color:black"> For rotational diffusion about a single axis, $\left< \theta^2 \right> = 2D_r t$ where $D_r = k_B T/f_r$.  </li> <br>
+            <li align="left" style="font-size:20px;color:black"> The rotational frictional drag cofficient of a sphere or radius $a$ is $f_r = 8 \pi \eta a^3$ </li> <br>
+            <li align="left" style="font-size:20px;color:black"> In 1 sec, a 1 $\mu$m sphere diffuses about 30$^\circ$.  </li> <br>
+            <li align="left" style="font-size:20px;color:blue"> A cell cannot increase its integration time with longer runs because it ``forgets'' its direction </li> 
+        </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Tethered Cells </p> 
+        <video loop controls='true' width='60%' height='60%' src="assets12/tethered.mp4" data-autoplay></video>
+        <p align="center" style="font-size:25px">  
+           CCW &#8594 runs
+           CW &#8594 tumbles
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The impulse response </p> 
+    <div class="row">
+        <div class="column left">
+            <img align="left" src="assets12/BergPhysicist1.png" width="90%">
+            <img align="left" src="assets12/BergPhysicist2.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+<br>
+            <li align="left" style="font-size:20px;color:black"> Expose a cell to a short impulsive stimulus (aspartate pulse) </li> <br>
+            <li align="left" style="font-size:20px;color:black"> A biphasic response is obtained. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> The CCW bias rises rapidly, returns to baseline after one second, falls below baseline, and returns to baseline after another 3 seconds </li> <br>
+            <li align="left" style="font-size:20px;color:black"> The impulse response is a <span style="color:blue">weighting function </span> if the system is linear, when changes in response are proportional to changes in stimulus: $\Delta r(t) \propto \Delta s(t)$  </li> <br>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Linear filters </p> 
+        <div style="position: absolute; left: 0%; width: 30%; height: 200px;">
+            <img src="assets12/squarewave.png">
+        </div>
+                                            
+        <div style="position: absolute; left: 33%; width: 33%; height: 200px;">
+            <img src="assets12/kernelclean.png">
+        </div>
+                                            
+        <div style="position: absolute; left: 66%; width: 33%; height: 200px;">
+            <img src="assets12/squarewaveresponse.png">
+        </div>
+        <div style="position: absolute; top: 350px; left: 0%; width: 100%; height:200px;">
+            <li align="left" style="font-size:20px;color:black"> The response at each time is a weighted sum of stimulus values at earlier times 
+                \begin{align*}
+                    r=r_0 + \int_0^\infty d\tau h(\tau) s(t-\tau)
+                \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black"> $r_0$ is background firing when $s = 0$. </li> 
+            <li align="left" style="font-size:20px;color:black"> $h(t)$ is a weighting factor that determines how the stimulus at time $t-\tau$ affects the response at time $t$.  </li> 
+        </div>
+</section>
+
+
+<section>
+    <p> Non-linear mappings </p> 
+            <li align="left" style="font-size:20px;color:white"> Functionals map functions to other functions 
+                \begin{align*}
+                    s(t) \mapsto r(t)
+                \end{align*}</li> <br>
+            <li align="left" style="font-size:20px;color:white"> The \textbf{Volterra expansion} is the functional equivalent of the Taylor series expansion. This generates a power series approximations of functions: 
+                \begin{align*}
+                    r(t) = r_0 + \int d\tau h(\tau)s(t-\tau) + \int d\tau_1 d\tau_2 h_2(\tau_1, \tau_2)s(t-\tau_1)s(t-\tau_2) +\\
+                    \int d\tau_1 d\tau_2 d\tau_3 h_3(\tau_1, \tau_2, \tau_3)s(t-\tau_1)s(t-\tau_2)s(t-\tau_3)...
+                \end{align*}</li> <br>
+            <li align="left" style="font-size:20px;color:yellow"> We call $h$ the "linear filter", "first Volterra kernel," or just the "kernel". 
+            \begin{align*}
+                r-r_0 = \int_0^\infty d\tau h(\tau) s(t-\tau)
+            \end{align*}</li> <br>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Measuring the kernel with an impulse response </p>
+    <div class="row">
+        <div class="column left">
+        <img src="python/gaussian.png" width="100%">
+            <p align="left" style="font-size:20px">  
+                \begin{align*}
+                    s(t)= \frac{1}{(2 \pi \sigma^2)^{1/2}}e^{-t^2/2\sigma^2}
+                \end{align*}
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> In the limit that $\sigma \rightarrow 0 $, the Gaussian function approaches a delta function: 
+                \[ \int_{-\infty}^{\infty} f(\tau)\underbrace{s(\tau-t)}_{\approx\,\delta(\tau-t)}d\tau\approx f(t) \]</li> <br>
+            <li align="left" style="font-size:20px;color:black"> If the stimulus is sharply peaked at $t=0$, then the response to the stimulus reflects the value of the kernel at one point: 
+                \begin{align*}
+                    r-r_0 & \propto  \int_0^\infty d\tau\, h(\tau) \delta(t-\tau) \\
+                    &\propto h(t)
+                \end{align*}
+            when $s(t)\propto\delta(t)$.</li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The bacterial impulse response </p>
+    <div class="row">
+        <div class="column left">
+            <img src="python/kernel.png" width="100%">
+            <p align="center" style="font-size:20px">  
+                Fit to sum of four exponentials:
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> Area of positive lobe equals area of negative lobe 
+                \begin{align*}
+                    \int_0^\infty h(t)dt = 0
+                \end{align*}</li> <br>
+            <li align="left" style="font-size:20px;color:black"> The impulse response positively weights the most recent 1 second of any stimulus waveform and negatively weights the preceding 3 seconds.</li> <br>
+            <li align="left" style="font-size:20px;color:black"> Calculating a derivative 
+            \[ r(t) \approx s(t-1) - s(t-3) \]</li>
+            <li align="left" style="font-size:20px;color:blue"> Thus, $r(t) \approx ds/dt$ </li> <br>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Temporal Comparisons in Bacterial Chemotaxis </p>
+    <div class="row">
+        <div class="column left">
+            <p align="center" style="font-size:20px">  
+               Impulse response 
+            </p>
+            <img align="center" src="assets12/Segall1.png">
+        </div>
+        <div class="column middle">
+            <p align="center" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="center" style="font-size:20px">  
+               Step response 
+            </p>
+            <img align="center" src="assets12/Segall2.png">
+        </div>
+    </div>
+    <p align="center" style="font-size:20px">  
+         The impulse stimulus resembles the time-derivative of the step stimulus &#8594 $s_{impulse} \propto \frac{ds_{step}}{dt}$  
+    </p>
+    <p align="center" style="font-size:20px">  
+         <em>So</em> the impulse response must resemble the time-derivative of the step response &#8594 $r_{impulse} \propto \frac{dr_{step}}{dt}$  
+    </p>
+</section>
+
+<section>
+    <p> Temporal filtering </p> 
+        <li align="left" style="font-size:20px;color:white"> Any periodic stimulus can be written as a Fourier series: 
+        \[ s(t) = \sum_{n=-\infty}^\infty\hat{s}(\nu_n)e^{-2\pi i (n/T)t} = \frac{a_0}{2} + \sum_{n=1}^\infty \left[ a_n \cos{\left(\frac{2\pi n t}{T} \right)} + b_n \sin{\left(\frac{2\pi n t}{T} \right)} \right] \]</li> 
+        <li align="left" style="font-size:20px;color:white"> Decompose a stimulus into sine and cosine waves </li> 
+        <li align="left" style="font-size:20px;color:white"> Compute the linear mapping of each sine and cosine wave to a response </li> 
+        <li align="left" style="font-size:20px;color:white"> Reassemble the total response from the original Fourier coefficients </li> 
+    <div class="row">
+        <div class="column left">
+            <img align="center" src="assets12/sinewave.png" width="60%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <img align="center" src="assets12/bandpass.png" width="60%">
+        </div>
+    </div>
+    <p align="center" style="font-size:20px; color:orange">  
+        Our linear filter roughly differentiates a sinusoidal stimulus and behaves like a bandpass filter
+    </p>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Temporal sensitivity </p> 
+    <div class="row">
+        <div class="column left">
+            <img align="center" src="assets12/Segall3.png" width="90%">
+            <p align="center" style="font-size:20px">  
+                Change in bias as a function of <br>
+                time rate of change of fraction of receptor bound.
+            </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <img align="center" src="assets12/Segall4.png" width="90%">
+            <p align="center" style="font-size:20px">  
+               log(change in bias) as a function of <br>
+               log(stimulus frequency). 
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
