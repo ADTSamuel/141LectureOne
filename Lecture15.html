@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_15</p> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Auditory Illusions - Combination tones </p> 
+        <img src="assets15/Yankee_Doodle_combination_tones.png" width="80%">
+        <p align="center" style="font-size:20px">  
+            Additional tones can be artificially perceived when two real tones are played together.<br><br>
+            Discovered by Tartini.
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Combination tones </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets15/Zurek1.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br><br>
+            <li align="left" style="font-size:20px;color:black"> Audible combinations of frequencies greater than the primary tones that generate them. </li> <br><br>
+
+            <li align="left" style="font-size:20px;color:black"> With primary tones at frequencies $\mathbf{f_1}$ and $\mathbf{f_2}$, combination tones at $\mathbf{f_1+f_2}$, $\mathbf{2f_1-f_2}$ and other frequencies have been demonstrated. </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Two tone distortion in the basilar membrane of the cochlea </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_13.png" width="80%">
+        <p align="left" style="font-size:20px">  
+             Frequency spectra of basilar membrane responses to two-tone stimuli using laser velocimetry 
+        </p>
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <img src="assets15/Robles1.png" width="80%">
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Hair bundle motion opens mechanically sensitive ion channels </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/Fain6_7D.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+             <li align="left" style="font-size:18px;color:black"> A portion of the force $F$ necessary to displace a hair bundle through a distance $X$ reflects the work done in pulling open channel gates. </li> 
+             <li align="left" style="font-size:18px;color:black"> If a channel has three states, two closed and one open, then 
+                 \[ F = (\boldsymbol{\kappa_S}+\boldsymbol{\kappa_G}) X + C + [p_1(\Delta \boldsymbol{\kappa}X+Nz_{12})-p_3Nz_{23}]  \]</li> 
+             <li align="left" style="font-size:18px;color:black"> Bundle deflection and force are linearly related when the bundle is strongly pulled.  </li> 
+             <li align="left" style="font-size:18px;color:black"> Over a middle range, compliance depends on displacement </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Distortion products in force produced by hair bundle </p> 
+            <img src="assets15/Jaramillo1.png" width="60%">
+            <li align="left" style="font-size:20px;color:black"> When moved back and forth, a hair bundle produced force at the stimulus frequency and the second harmonic </li> 
+            <li align="left" style="font-size:20px;color:black"> When a second frequency was added, the bundle produced forces at the difference and sum frequencies ($f_2 - f_1$ and $f_1+f_2$) and at combination frequencies ($2f_1-f_2$ and $2f_2-f_1$). </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Distortion products in force produced by hair bundle </p> 
+            <img src="assets15/Jaramillo2.png" width="80%">
+            <li align="left" style="font-size:20px;color:black"> The relation between bundle displacement and force was determined by deflecting a bundle with stimulus pulses and measuring the flexion of the stimulus fiber.  </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Distortion products in force produced by hair bundle </p> 
+            <img src="assets15/Jaramillo2.png" width="80%">
+             <li align="center" style="font-size:20px;color:black"> Stimulation of the hair bundle at 90Hz and 115 Hz elicited distortion products </li><br>
+             <p align="center" style="font-size:20px;color:black">
+                    $f_2 - f_1$ = 25 Hz &nbsp;&nbsp;&nbsp;&nbsp; 
+                    $2f_2 - 2f_1$ = 50 Hz &nbsp;&nbsp;&nbsp;&nbsp; 
+                    $2f_1 - f_2$ = 65 Hz &nbsp;&nbsp;&nbsp;&nbsp; 
+                    $2f_2 - f_1$ = 140 Hz &nbsp;&nbsp;&nbsp;&nbsp; <br>
+                    $2f_1$ = 180 Hz &nbsp;&nbsp;&nbsp;&nbsp; 
+                    $f_1 + f_2$ = 205 Hz &nbsp;&nbsp;&nbsp;&nbsp; 
+                    $2f_2$ = 230 Hz </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Distortion products in force produced by hair bundle </p> 
+            <img src="assets15/Jaramillo2.png" width="80%">
+            <li align="left" style="font-size:20px;color:black"> Distortion products of similar frequency and magnitude arose in the power spectrum calculated from the bundle's measured stiffness and gating compliance.</li> <br>
+            <li align="left" style="font-size:20px;color:black"> The primary frequencies and stimulus amplitudes in (c) were the same as those in (b).  </li>  
+</section>
+
+
+<section data-background="#FFFFFF">
+        <div style="position: absolute; top: 0px; left: 0%; width: 100%; height: 100px;">
+            <p> My python experiment </p> 
+        </div>
+        <div style="position: absolute; top: 100px; left: 0%; width: 30%; height: 200px;">
+            <img src="python/channelopening.png">
+            <p align="center" style="font-size:20px;color:black"> Probability of channel opening vs displacement \[ p = \frac{1}{1+e^{-x}} \] </p> 
+        </div>
+                                            
+        <div style="position: absolute; top: 100px; left: 33%; width: 33%; height: 200px;">
+            <img src="python/compliance.png">
+            <p align="center" style="font-size:20px;color:black"> Compliance vs displacement \[ \frac{1}{k} = x - 5p(1-p) \]             </p> 
+        </div>
+                                            
+        <div style="position: absolute; top: 100px; left: 66%; width: 33%; height: 200px;">
+            <img src="python/hairbundleforce.png">
+            <p align="center" style="font-size:20px;color:black"> Force vs displacement \[ F = 1 - 5p \]                  </p> 
+        </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> My python experiment </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="python/hairbundleposition.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <img src="python/powerspectrum.png" width="100%">
+        </div>
+    </div>
+            <p align="center" style="font-size:20px;color:black"> Drive a hair bundle with sine waves at 500 Hz and 850 Hz <br>
+            Power spectrum of the force contains distortion products!  </p> 
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Measuring the position of a hair cell using a dual-beam interferometer </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/Denk1.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <img src="assets15/Denk2.png" width="80%">
+        </div>
+            <p align="center" style="font-size:20px;color:black"> Equipartition allows you to calculate the spring constant from the positional fluctuations: \[ \kappa = \frac{k_B T} { \left< x^2 \right> } \] </p> 
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Lorentzian power spectrum of hair cell positions </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/Denk3.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black"> Typical displacement power-spectral densities for (from bottom to top) instrumental noise, a hair bundle with a Lorentzian spectral shape (compare smooth Lorentzian trace), a hair bundle with most common shape, and a cell-cell boundary. </li> 
+            <li align="left" style="font-size:20px;color:black"> The power spectral density of position fluctuations looks like a Lorentzian centered at zero: \[ \frac{d \left< x_f^2 \right>}{df} = \frac{4k_B T \gamma }{\kappa^2 + (2 \pi f \gamma)^2 } \] </li> 
+            <li align="left" style="font-size:20px;color:black"> This function is flat for $2 \pi f \ll \kappa/\gamma$ and drops as $f^{-2}$ above roll-off frequency $f_k = \kappa/(2\pi \gamma)$. </li> 
+            <li align="left" style="font-size:20px;color:black"> By measuring thermally-driven displacements and the roll-off frequency of the Lorentzian, the mechanics of the hair bundle can be inferred. </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Hair cell mechanics inferred from hair cell movements
+</p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/Denk4.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <table style="border:hidden; font-size:15px">
+                <thead>
+                    <th align="center" > Relative viscosity (factor)</th>
+                    <th align="center" > Frequency Shift (factor) </th>
+                    <th align="center" > Amplitude (nm)</th>
+                </thead>  
+                <tbody>
+                  <tr>
+                    <td align="center"> 1 </td>
+                    <td align="center"> 1.0 &#177; 0.2 </td>
+                    <td align="center"> 4.0 &#177; 0.6 </td>
+                  </tr>
+                  <tr>
+                    <td align="center"> 3.5 </td>
+                    <td align="center"> 3.5 &#177; 0.4 </td>
+                    <td align="center"> 4.7 &#177; 0.5 </td>
+                  </tr>
+                  <tr>
+                    <td align="center"> 1 </td>
+                    <td align="center"> 1.44 &#177; 0.1 </td>
+                    <td align="center"> 5.4 &#177; 0.3 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="color:red"> 1 </td>
+                    <td align="center" style="color:red'"> 1.00 &#177; 0.7 </td>
+                    <td align="center" style="color:red'"> 2.5 &#177; 0.3 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="color:red"> 3.18 </td>
+                    <td align="center" style="color:red"> 3.2 &#177; 0.3 </td>
+                    <td align="center" style="color:red"> 3.8 &#177; 0.3 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="color:red"> 10.1 </td>
+                    <td align="center" style="color:red"> 7.4 &#177; 0.7 </td>
+                    <td align="center" style="color:red"> 3.3 &#177; 0.5 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="color:blue"> 1 </td>
+                    <td align="center" style="color:blue"> 1.0 </td>
+                    <td align="center" style="color:blue"> 2.4 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="color:blue"> 10.1 </td>
+                    <td align="center" style="color:blue"> 9.9 &#177; 0.3 </td>
+                    <td align="center" style="color:blue"> 2.8 &#177; 1.0 </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="color:blue"> 1 </td>
+                    <td align="center" style="color:blue"> 1.34 &#177; 0.19 </td>
+                    <td align="center" style="color:blue"> 1.9 &#177; 0.3 </td>
+                  </tr>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <p> Fourier Analysis </p> 
+        <p align="center" style="font-size:20px">  
+            <li align="left" style="font-size:20px;color:white"> The value of the Fourier transform of $x(t)$ at frequency $f$ is: 
+                \[ {\hat {x}}(f)\triangleq \int _{-\infty }^{\infty }e^{-i2\pi ft}x(t)\ dt \] </li> <br>
+            <li align="left" style="font-size:20px;color:white"> Parseval's or Plancherel's theorem gives us alternate expressions for the energy of the signal:  
+                \[ \int _{-\infty }^{\infty }|x(t)|^{2}\,dt=\int _{-\infty }^{\infty }|{\hat {x}}(f)|^{2}\ df \] </li> <br>
+            <li align="left" style="font-size:20px;color:white"> Can view $|{\hat {x}}_{T}(f)|^{2}$ as the Fourier transformation of the time convolution of the signal as: 
+                \[ |{\hat {x}}_{T}(f)|^{2}={\mathcal {F}}\left\{x_{T}^{*}(-t)\mathbf {*} x_{T}(t)\right\}=\int _{-\infty }^{\infty }\left[\int _{-\infty }^{\infty }x_{T}^{*}(t-\tau )x_{T}(t)dt\right]e^{-i2\pi f\tau }\ d\tau  \] </li> 
+        </p>
+</section>
+
+
+<section>
+    <p> The random forcing term of the Langevin equation </p> 
+            <li align="left" style="font-size:20px;color:white">
+            Consider 1-D Brownian movement of a particle with frictional drag coefficient $\gamma$ and mass $m$: 
+                \[ m\dot{v} + \gamma v = \eta(t) \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            Random forcing term:
+                \[ \left< \eta(t') \eta(t) \right> = \sigma^2 \delta (t-t') \] 
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            What is $\sigma^2$? A solution to this first-order inhomogeneous differential equation will be:
+                \[ v(t) = e^{-\gamma t / m } \times f(t) \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            Substituting the solution into the original differential equation gives: 
+                \[ v(t) = \frac{e^{-\gamma t/m}}{m} \int_{-\infty}^t \eta(\tau) e^{\gamma \tau /m } d\tau \] 
+            </li> <br>
+</section>
+
+<section>
+    <p> The random forcing term of the Langevin equation, continued </p> 
+            <li align="left" style="font-size:20px;color:white">
+            Rearrangement gives: 
+                \[ v(t) = \frac{1}{m} \int_{-\infty}^t \eta(\tau) e^{-\frac{\gamma}{m} (t-\tau)} d\tau \] 
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            Change of variables $t'=t-\tau$:
+                \[ v(t) = \frac{1}{m} \int_{0}^{\infty} \eta(t-t') e^{-\frac{\gamma}{m} t'} d t' \]
+            </li> <br>
+</section>
+
+<section>
+    <p> Random forcing of Langevin, continued </p> 
+            <li align="left" style="font-size:20px;color:white">
+            Equipartition gives us the value of the mean square velocity:
+            \[ \left< v^2 \right> = \frac{k_B T}{m} \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            The magnitude of the random forcing term ($\sigma^2$) has to be such that equipartition is satisfied!
+            \[ v^2(t) = \frac{1}{m^2} \int_{0}^{\infty} \int_{0}^{\infty} \eta(t-t') \eta(t-t'') e^{-\frac{\gamma}{m} (t'+ t'')} d t' dt'' \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            Take the expectation value of $v^2(t)$:
+            \[ \left< v^2(t) \right> = \frac{1}{m^2} \int_{0}^{\infty} \int_{0}^{\infty} \left< \eta(t-t') \eta(t-t'') \right> e^{-\frac{\gamma}{m} (t'+ t'')} d t' dt'' \]                
+            </li> <br>
+</section>
+
+<section>
+    <p> Random forcing of Langevin, continued </p> 
+            <li align="left" style="font-size:20px;color:white">
+            But $\left< \eta(t-t') \eta(t-t'') \right> = \sigma^2 \delta(t'-t'')$ , which greatly simplifies the integral, which has to satisfy equipartition:
+            \[ \sigma^2 \int_{0}^{\infty} e^{-\frac{2\gamma t'}{m}} d t' = m k_B T\] 
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            We conclude that $\sigma^2 = 2 \gamma k_B T$ and that 
+            \[\left< \eta(t) \eta (t') \right> = 2 \gamma k_B T \delta(t-t')\]
+            </li> <br>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Random forcing of an object in a harmonic potential </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/Denk3.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black">
+            Consider an over-damped particle in a harmonic potential well, $E=\kappa x^2 /2$: 
+                \[ \gamma \dot{x} + \kappa x = \eta(t) \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:black">
+            The Fourier-transform of the equation of motion gives us a direct relationship between the Fourier transform of position and the Fourier transform of the random forcing term: 
+                \[ 2 \pi i \gamma f \tilde{x} (f) + \kappa \tilde{x} (f) = \tilde{\eta}(f) \] 
+            </li> <br>
+            <li align="left" style="font-size:20px;color:black">
+            Thus, the power spectral density of positional fluctuations is: 
+                \[ S_x(f) = \frac{4 \gamma k_B T}{(2 \pi f \gamma)^2 + \kappa^2} \]
+            </li> <br>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> The need for active resonance </p> 
+            <li align="left" style="font-size:20px;color:white">
+            Basilar membrane displacements at the hearing threshold are in the range 0.1 to 1 &#8491;
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            If the motion of the hair bundle were free and undamped, $kT=\kappa \left< x^2 \right>$. 
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            For a hair bundle, $\kappa \approx 10^{-3}$ N/m, so the root-mean-square thermal displacement is around 2 nm.
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            The power spectral density of the hair bundle is:
+                \[ P(f) = \frac{4 \gamma k_B T}{\kappa^2 + 4 \pi^2 f^2 \gamma^2 } \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            What size frequency band (at frequencies below damping) gives rise to displacements on the 1 &#8491; length scale?
+                \[ 10^{-20} \text{m}^2 = \frac{4 \gamma k_B T}{\kappa^2}\Delta f \text{m}^2/\text{Hz} \]
+            </li> <br>
+</section>
+
+<section>
+    <p> The need for active resonance </p> 
+            <li align="left" style="font-size:20px;color:white">
+            What size frequency band (at frequencies below damping) gives rise to displacements on the 1 &#8491; length scale?
+                \[ 10^{-20} \text{m}^2 = \frac{4 \gamma k_B T}{\kappa^2}\Delta f \text{m}^2/\text{Hz} \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            For a hair bundle, $\gamma \approx 10^{-7} \text{N}\cdot \text{s}/\text{m}$, $\kappa \approx 10^{-3}$ N/m, and so $\Delta f \approx$ 1 Hz.
+            </li> <br>
+            <li align="left" style="font-size:20px;color:yellow">
+            Signal detection within a narrow bandwidth is needed such that the stimulus-evoked displacement is larger than the thermally-evoked displacement!
+            </li> <br>
+</section>
+
+<section>
+    <p> Compressive nonlinearity </p> 
+            <li align="left" style="font-size:20px;color:white">
+            Normal form of a dynamical system with a Hopf bifurcation:
+                \[ \dot{z} = (\mu - i \omega_0) z - \left| z^2 \right| z \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            When $\mu$ becomes positive, the solution $z \equiv 0$ becomes unstable, and a stable oscillatory solution appears
+                \[ z=\sqrt{\mu}\exp{(i \omega_0 t)} \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            If the system is subjected to periodic forcing, the force balance equation becomes
+                \[ \dot{z} = (\mu - i \omega_0) z - \left| z^2 \right| z + F e^{i \omega t} \]
+            </li> <br>
+            <li align="left" style="font-size:20px;color:white">
+            Assuming a 1:1 locked form $z=R e^{i \omega t + i \phi}$:
+                \[ F^2 = R^6 - 2\mu R^4 +\left[ \mu^2 +(\omega - \omega_0)^2 \right] R^2 \]
+            </li> <br>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Compressive nonlinearity </p> 
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/HudspethMagnasco.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black">
+            At the center of resonance, where $\omega = \omega_0$, $R \approx F^{1/3}$.
+            </li> <br>
+            <li align="left" style="font-size:20px;color:black">
+            No matter how small $F$ might be, the response is nonlinear.
+            </li> <br>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <p> Integrating the active process of hair cells </p> 
+            <li align="left" style="font-size:20px;color:white"> We can hear vibrations of the eardrum that are as small as 1 picometer </li> 
+            <li align="left" style="font-size:20px;color:white"> We hear from 20 Hz to 20kHz, and can distinguish sounds 1/30th of the interval between notes on the piano </li> 
+            <li align="left" style="font-size:20px;color:white"> We hear amplitudes ranging a trillion-fold in intensity </li> 
+            <li align="left" style="font-size:20px;color:white"> Normal hearing actively amplifies sound intensities by hundredfold </li> 
+            <li align="left" style="font-size:20px;color:white"> Active process enhances frequency sensitivity </li> 
+            <li align="left" style="font-size:20px;color:white"> The normal cochlea can produce otoacoustic emissions because of the positive feedback that produces spontaneous oscillations </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The cochlea and organ of Corti </p> 
+        <img src="file.png" width="80%">
+            <img src="assets15/Hudspeth2014_1.png" width="80%">
+            <li align="left" style="font-size:20px;color:white"> The receptor for sound in the human ear is the organ of Corti, a strip of sensory epithelium running some 33 mm along the spiral cochlea </li> 
+            <li align="left" style="font-size:20px;color:white"> 3,500 inner hair cells are arranged in a single row, forming synapses with afferent nerve terminals. </li> 
+            <li align="left" style="font-size:20px;color:white"> 12,000 outer hair cells mediate the active process. Their principal role is mechanical </li> 
+</section>
+
+<section>
+    <p> The traveling wave </p> 
+            <li align="left" style="font-size:20px;color:white"> When a mammalian cochlea receives a pure-tone acoustic stimulus, pressure differences between its liquid-filled compartments set the basilar membrane into oscillation at the frequency of stimulation.  </li> <br>
+            <li align="left" style="font-size:20px;color:white"> As each wave progresses, it grows in amplitude, decreases in wavelength, and then abruptly vanishes </li> <br>
+            <li align="left" style="font-size:20px;color:white"> Most of the energy associated with sound of any particular frequency is deposited at a specific position along the basilar membrane, beyond which propagation ceases and the traveling wave collapses </li> <br>
+            <li align="left" style="font-size:20px;color:white"> High frequencies (up to 20 kHz) are represented at the cochlear base </li> <br>
+            <li align="left" style="font-size:20px;color:white"> Low frequencies, down to 20 Hz, excite the apex.  </li> <br>
+            <li align="left" style="font-size:20px;color:white"> In the mammalian cochlea, the active process of outer hair cells amplifies the vibration of each increment of the basilar membrane, contributing energy that sustains a traveling wave </li> <br>
+            <li align="left" style="font-size:20px;color:white"> Active hair-bundle motility, constitutes the entire active process of amphibians and some reptiles </li> <br>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> The hair cell and hair bundle </p> 
+            <img src="assets15/Hudspeth2014_2.png" width="60%">
+            <li align="left" style="font-size:20px;color:black">
+            Transduction commences when a stimulus deflects the hair cell's elegant mechanoreceptive organelle, the hair bundle.
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            The hair bundle transduces a stimulus force into an electrical response, the receptor potential, which is a change in the voltage across the cell's membrane
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            The receptor potential in turn modulates the release of the neurotransmitter from synapses at the hair cell's base and thus transmits the response to the brain
+            </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating of transduction channels </p> 
+            <img src="assets15/Hudspeth2014_3.png" width="60%">
+            <li align="left" style="font-size:20px;color:black">
+            Movement of a hair bundle's top within its plane of bilateral symmetry, as occurs when a bundle is stimulated by sound, causes the largest electrical response
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Displacement towards the bundle's tall edge, which is defined as a positive stimulus, opens transduction channels and causes depolarization.
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Deflection in the opposite direction closes channels and evokes hyperpolarization.
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Channels appear to be asymmetrically located at the links' lower insertions
+            </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating of transduction channels </p> 
+            <img src="assets15/Hudspeth2014_4.png" width="60%">
+            <li align="left" style="font-size:20px;color:black">
+            If a hair cell's transduction channels are gated directly by the force applied to the hair bundle, the opening and closing of the channels should reciprocally influence the bundle's mechanical properties. 
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            The demonstration of this decrease in hair-bundle stiffness, termed the gating compliance, provides evidence in support of the gating-spring theory
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            The gating compliance can become so great that it outweighs the stiffness of a hair bundle's other components, whereupon the bundle's total stiffness becomes negative
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            a hair bundle displaying negative stiffness does not oppose an applied stimulus force but instead augments the stimulus by contributing additional force in the same direction
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            a hair bundle cannot reside stably near the region of negative stiffness because a thermal deflection in either direction drives the bundle into a region of positive stiffness
+            </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Adaptation </p> 
+            <img src="assets15/Hudspeth2014_5.png" width="60%">
+            <li align="left" style="font-size:20px;color:black">
+            Because auditory transduction does not proceed through a biochemical signalling cascade such as those characteristic of vision, smell and taste, a novel mechanism is required to effect adaptation to sustained stimulation
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            If a hair bundle is experimentally displaced from its resting position, the locus of mechanical sensitivity migrates towards its new position with a time constant of a few tens of milliseconds
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            When responding to a positive force, a bundle initially moves a distance that is inversely proportional to its stiffness, but then the bundle sags farther in the same direction. 
+            </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Limit-cycle oscillation </p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets15/Hudspeth2014_6.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <li align="left" style="font-size:20px;color:black">
+            the hair bundles of many species exhibit spontaneous movements that reflect their capacity to participate in the active process
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Spontaneous hair-bundle oscillations emerge from the combination of negative hair-bundle stiffness and adaptation. 
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Suppose that such a bundle starts with a small open probability for its transduction channels
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Acting through the ascent of tip link motors, adaptation begins to increase the open probability towards the steady-state set point
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            This progressively shifts the displace- ment–force relation to the left and downwards.
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            the region of positive slope vanishes abruptly and the hair bundle must leap to a new fixed point on the curve's opposite limb
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+             the open probability is high, so the tip link insertions begin to descend
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            When mechanical stability again vanishes, the hair bundle jerks back in the negative direction.
+            </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Hopf bifurcations </p>
+    <div class="row">
+        <div class="column left">
+            <p align="center" style="font-size:25px">  
+                $\mu = -1$
+            </p>
+            <img src="python/limitcyclemunegative.png" width="60%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="center" style="font-size:25px">  
+                $\mu = +1$
+            </p>
+            <img src="python/limitcyclemupositive.png" width="60%">
+        </div>
+    </div>
+            <li align="left" style="font-size:20px;color:black">
+            Normal form of a dynamical system with a Hopf bifurcation:
+                \[ \dot{z} = (\mu - i \omega_0) z - \left| z^2 \right| z \]
+            </li> 
+            <li align="left" style="font-size:20px;color:black">
+            Limit-cycle oscillations when $\mu &gt; 0$, stable fixed point at $x=0, y=0$ when $\mu &lt; 0$
+            </li> 
+</section>
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+table, tr {border:hidden;}
+td, th {border:hidden;}
+tr:hover {background-color: gray;}
+</style>
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+/* Set width length for the left, right and middle columns */
+    .left {
+    width: 45%;
+    }
+
+    .middle {
+    width: 10%;
+    }
+    
+    .right {
+    width: 45%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<!-- URL Slide -->
+<section>
+    <p> http:</small>//bit.ly/Phys141_14</p> 
+</section>
+
+
+<section data-background="#D3D3D3">
+    <p> Hair cells </p> 
+        <img src="assets14/Fain6_5.png" width="60%">
+        <p align="center" style="font-size:20px">  
+          (A) Top of hair cell, showing cuticular plate, stereocilia, and kinocilium.<br>
+          (B) Hair cell with synapses onto afferent nerves and from efferent nerves.<br>
+        </p>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Hair cells in the fish lateral line sense water movement </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_12.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> Distribution of lateral line organs on minnow tail </li> <br><br>
+            <li align="left" style="font-size:20px;color:black"> Anatomy of a single organ. Two populations of cells have hair bundles oriented in opposing directions.  </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> The cochlea, the organ of hearing.  </p> 
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_13.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> Structure of the human ear.  </li> <br><br>
+            <li align="left" style="font-size:20px;color:black"> Enlargement of components of the mammalian inner ear, showing semicircular canals, otolith organs, and cochlea.  </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Vestibular system </p> 
+        <img src="assets14/Fain6_15.png" width="80%">
+            <li align="center" style="font-size:20px;color:black">
+                Organ in the inner ear that detects head position and movement </li> <br><br>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> The cochlea</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_16.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <p align="left" style="font-size:20px;color:black"> (A) Cross-section of the cochlea. </p> <br>
+            <p align="left" style="font-size:20px;color:black"> (B) The cochlea imagined as uncoiled to illustrate the motion of the basilar membrane. </p> <br>
+            <p align="left" style="font-size:20px;color:black"> Pressure on the oval window is communicated through the fluids of the scala vestibuli and scala tympani to the round window, producing a traveling wave of basilar membrane oscillation.  </p> <br>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p> Scanning electron micrographs of hair bundles.  </p> 
+        <img src="assets14/Fain6_4.png" width="80%">
+        <p align="center" style="font-size:20px">  
+            (A) Bullfrog sacculus.  Note kinocilium with ball at top.<br>
+            (B) Stereocilium bundle of an outer hair cell from the mouse cochlea.  Scale bar, 1 &mu;m.
+        </p>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Recording from hair cells </p>
+        <img src="assets14/Fain3_11.png" width="60%">
+        <p align="left" style="font-size:20px">  
+            <span style="color:blue"> (B) Change in membrane potential.  </span> caused by triangle stimulus waves (10 Hz) for three amplitudes <br>
+            <span style="color:blue"> (C) Change in membrane potential vs. amplitude of hair bundle movement.  </span> <br>
+        </p>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Location of stretch sensitive channels</p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_6.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br><br>
+            <li align="left" style="font-size:20px;color:black">  Change in indicator-dye fluorescence produced by the entry of Ca<sup>2+</sup> through mechanoreceptive channels in different regions of a hair bundle, measured with two-photon confocal microscopy. </li> <br><br><br>
+            <li align="left" style="font-size:20px;color:black">  Cell had been filled with fluorescent Ca<sup>2+</sup> indicator dye. </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Tip Links </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_7.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+             <li align="left" style="font-size:20px;color:black"> Scanning electron micrograph showing tip links (arrows) from outer hair cell of the guinea pig cochlea.  </li> <br>
+             <li align="left" style="font-size:20px;color:black"> Scanning electron micrograph of a chicken auditory receptor.  </li> <br>
+             <li align="left" style="font-size:20px;color:black"> Freeze-etch image of upper insertions of tip links of hair cells from guinea pig cochlea. Scale bars, 100 nm.  </li> <br>
+             <li align="left" style="font-size:20px;color:black"> Proposed role of tip links in channel gating. </li> <br>
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating compliance </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_9.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <img src="assets14/Fain6_10.png" width="80%">
+            <li align="left" style="font-size:20px;color:black"> Stiffness of hair bundle and receptor potential as functions of bundle displacement. </li> 
+            <li align="left" style="font-size:20px;color:black"> Amplitude of receptor potential (black curve) and bundle stiffness $k(x)$ (blue curve) as functions of hair bundle displacement.  </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Gating compliance </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_9.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px">  
+            The stiffness of the hair bundle ($\mathbf{K_B}$) includes the stiffness of the stereociliary pivots ($\mathbf{K_S}$), the stiffness of the gating springs ($\mathbf{K_G}$), and a term that depends on the probability of the channel's being open:
+            \[ \mathbf{K_B} = \mathbf{K_S} + \mathbf{K_G} - \frac{Nz^2p(1-p)}{kT} \]
+            where $N$ is the number of channels and $z$ is the gating force of a single channel.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-background="#D3D3D3">
+    <p> Gating compliance </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Fain6_10.png" width="80%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <p align="left" style="font-size:20px">  
+                The steady-state probability of the channels' being open is a sigmoidal function of bundle displacement ($X$) and of the single-channel gating force:
+                \[ p = \frac{1}{1+\exp{\left[ -\frac{z(X-X_0)}{kT} \right]}} \]
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> A model for the transduction element of the hair cell </p> 
+        <img src="assets14/Howard1.png" width="60%">
+            <li align="left" style="font-size:20px;color:black"> The conductance of a transduction channel is regulated by a molecular gate that assumes two positions, <em>open</em> and <em>closed</em>.  </li> 
+            <li align="left" style="font-size:20px;color:black"> Positive displacement of the hair bundle increases tension in the gating spring, of stiffness $\boldsymbol{\kappa_G}$ </li> 
+            <li align="left" style="font-size:20px;color:black"> When the channel is closed, the spring is extended by a distance $x + d/2$ beyond its natural length, $l$.</li> 
+            <li align="left" style="font-size:20px;color:black"> Opening the channel shortens the spring by a distance $d$ </li>  
+        </p>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Technique for the measurement of hair-bundle stiffness </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Howard2.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> A hair cell was stimulated by displacing a glass fiber adhering to kinocilium. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> Displacement of the fiber base by $Y$ displaces the hair bundle by $X$. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> The extent to which the calibrated fiber was bent $(Y - X)$ provided a measure of stiffness </li>  
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Rapid response and adaptation dynamics </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Howard3a.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br><br>
+            <li align="left" style="font-size:20px;color:black"> Apply a force of about 70 pN </li>
+            <li align="left" style="font-size:20px;color:black"> Bundle moves rapidly about 74 nm </li>
+            <li align="left" style="font-size:20px;color:black"> A transient reversal or rebound quickly occurs </li>
+            <li align="left" style="font-size:20px;color:black"> Bundle relaxes to a new steady state with a time constant of 31 ms </li>
+            <li align="left" style="font-size:20px;color:black"> After force pulse, bundle relaxes to old steady state with a time constant of 43 ms </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Rapid response and adaptation dynamics </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Howard3b.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br><br><br>
+            <p align="left" style="font-size:20px;color:black"> Families of bundle displacements (top traces) and receptor potentials (middle traces).</p> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating compliance coincides with change in receptor potential </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Howard4a.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br><br>
+            <li align="left" style="font-size:20px;color:black"> Stiffness smaller over a roughly 125 nm range of displacements and was minimal at 26 nm positive to resting position </li> 
+            <li align="left" style="font-size:20px;color:black"> Minimal stiffness was 290 &mu;N/m smaller than the stiffness of 1150 &mu;N/m when pushed far negative or far positive </li> 
+        </div>
+    </div>
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating compliance coincides with change in receptor potential </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Howard4a.png" width="100%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+        <img src="assets14/Howard4b.png" width="100%">
+        </div>
+    </div>
+            <p align="center" style="font-size:20px;color:black"> Sensory transduction is most sensitive for deflections where bundle is least stiff </p> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating springs model </p> 
+        <img src="assets14/Howard1.png" width="60%">
+            <li align="left" style="font-size:20px;color:black"> Suppose that the gating spring has a stiffness $\kappa_G$. At a given displacement of the hair bundle, $x$ is the extension of the gating spring midway between the open and closed states </li> 
+            <li align="left" style="font-size:20px;color:black"> When the channel is closed, the energy of the transduction element comprising the spring and channel is 
+                \[ g_c^0 = \frac{1}{2} \boldsymbol{\kappa_G}(x+d/2)^2 + \mu_c^0 \]</li> 
+            <li align="left" style="font-size:20px;color:black"> When the channel is open, the energy of the transduction element comprising the spring and channel is 
+                \[ g_o^0 = \frac{1}{2} \boldsymbol{\kappa_G}(x-d/2)^2 + \mu_o^0 \]</li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating springs model </p> 
+        <img src="assets14/Howard1.png" width="60%">
+            <li align="left" style="font-size:20px;color:black"> The energy difference between the open and closed states is 
+                \[ \Delta g^0 = g_o^0 - g_c^0  = -\boldsymbol{\kappa_G} \times d \times x + \mu_0^0 - \mu_c^0 \]</li> 
+            <li align="left" style="font-size:20px;color:black"> The probability ($p$) of finding the channel in the open state when the system is in equilibrium is given by the Boltzmann law: 
+                \[ p = \frac{1}{1+\exp{\left[ -z(X-X_0)/kT \right] }} \]
+            where the single channel gating force is $z=\boldsymbol{\kappa_G} \times d \times \gamma$</li> 
+            <li align="left" style="font-size:20px;color:black"> The steady-state transduction current will be proportional to $p$ </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating springs model </p> 
+        <img src="assets14/Howard1.png" width="60%">
+            <li align="left" style="font-size:20px;color:black"> The force exerted by a gating spring on its insertions is $f_c = \boldsymbol{\kappa_G} (x-d/2)$ when the channel is open and $f_o = \boldsymbol{\kappa_G} (x+d/2)$ when the channel is closed. </li> 
+            <li align="left" style="font-size:20px;color:black"> The time average of the force exerted by one transduction element is thus 
+                        \begin{align*}
+                            f &= p f_o + (1-p) f_c\\
+                            &= \boldsymbol{\kappa_G}(x+d/2) -\boldsymbol{\kappa_G} d \times p
+                        \end{align*}</li> 
+            <li align="left" style="font-size:20px;color:black"> Because of the lever ratio ($\gamma$) between spring elongation and bundle displacement, the force exerted at the tip of the bundle (and in the direction of bundle displacement) is $N\gamma f$ </li> 
+</section>
+
+<section data-background="#FFFFFF">
+    <p> Gating springs model </p> 
+        <img src="assets14/Howard1.png" width="60%">
+            <li align="left" style="font-size:20px;color:black"> The steady-state force required to hold the hair bundle at position $X$ 
+                \[ F = \mathbf{K_s} (X-X_S) + N \boldsymbol{\kappa_G} \gamma (\gamma X + x_r + d/2) -Nzp \]
+            in which $\mathbf{K_s}$ is the stiffness of the elastic components in parallel with the transduction elements such as the basal tapers and $X_s$ is the steady-state position in the absence of gating springs.</li> 
+            <li align="left" style="font-size:20px;color:black"> Differentiation of $F$ with respect to $X$ gives the bundle stiffness: 
+                \[ \mathbf{K_B} = \mathbf{K_S} + N \boldsymbol{\kappa_G} \gamma^2 - N z^2 p(1-p)/kT  \] </li> 
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Adaptation </p>
+    <div class="row">
+        <div class="column left">
+        <img src="assets14/Howard5.png" width="90%">
+        </div>
+        <div class="column middle">
+            <p align="left" style="font-size:20px">  
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+            </p>
+        </div>
+        <div class="column right">
+            <br>
+            <li align="left" style="font-size:20px;color:black"> the position increased compliance should shift with the region of mechanosensitivity. </li> <br>
+            <li align="left" style="font-size:20px;color:black"> a hair cell was stimulated force pulses </li> <br>
+            <li align="left" style="font-size:20px;color:black"> the experiment was repeated while the bundle was offset by positively or negatively directed stimuli that produced steady displacements of 103 nm and -93 nm </li> <br>
+            <li align="left" style="font-size:20px;color:black"> gating compliance changes its position during adaptation </li> <br>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- END OF SLIDES -->
+
+</div>
+
+</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				// There are three typesetters available
+				// RevealMath.MathJax2 (default)
+				// RevealMath.MathJax3
+				// RevealMath.KaTeX
+				//
+				// More info at https://revealjs.com/math/
+				plugins: [ RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
