@@ -79,36 +79,133 @@
 <!-- Abstract Slide -->
 
 <section data-background="#000000">
-    <p align="left"> <small> Living organisms use sensory systems to inform themselves of the sights, sounds, and smells of their surrounding environments. Sensory systems are physical measuring devices, and are therefore subject to certain limits imposed by physics. Here we will consider the physics of sensory measurement and perception, and study ways that biological systems have solved their underlying physical problems. We will discuss specific cases in vision, olfaction, and hearing from a physicist’s point of view. </small> </p>
+    <p align="left"> <small> 
+        Living organisms use their sensory systems to inform themselves of the sights, sounds, and smells of the environment. <br><br>
+        All sensory systems are measuring devices that must operate within the limits of physical law. <br><br>
+        Here, we consider the physics of sensory measurement, and study ways that biological systems have solved physical problems that lead to reliable sensory perception.<br><br>
+        We will discuss specific cases in vision, olfaction, and hearing from the point of view of physics and information theory.<br><br>
+</small> </p>
 </section>
 
 <section>
-    <p>Aristotle's senses</p>
-        <img src="assets/aristotle-senses.jpg" width="60%">
-        <p align="center" style="font-size:25px">  
-           Windows into the soul. <br>
-        </p>
+    <p>Biological and artificial information processing </p>
+        <img src="assets/mlp.png" width="60%">
 </section>
 
+<section>
+<section>
+    <p>Bacterial chemotaxis </p>
+    <video loop controls='true' width='60%' height='60%' src="assets/swimmingbacteria.mp4" data-autoplay></video>
+</section>
+<section>
+        <img src="assets/sourjikA.png" width="60%">
+</section>
+<section>
+        <img src="assets/sourjikB.png" width="50%">
+</section>
+</section>
+
+<section>
+<section>
+    <p> Signaling across networks </p> 
+        <img src="assets/paindescartes.png" width="40%">
+</section>
+<section>
+    <p> Canonical neuron </p> 
+        <img src="assets/neuron.png" width="80%">
+</section>
+
+<section>
+    <p> McCulloch-Pitts model </p> 
+        <img src="assets/pitts.png" width="80%">
+</section>
+
+<section>
+    <p> McCulloch-Pitts algorithm </p> 
+    <p align="left" style="font-size:30px">  
+        \[ n_{i}(t+1) = \Theta \left( \sum_j w_{ij}n_j (t) - \mu_i \right) \]
+    </p>
+</section>
+<section>
+    <p> Two-layer perceptron </p> 
+        <img src="assets/twolayerperceptron.png" width="60%">
+</section>
+</section>
+
+
+<section>
+<section>
+    <p> John Hopfield </p> 
+        <img src="assets/johnhopfield.png" width="80%">
+</section>
+<section>
+    <p> Hopfield Network </p> 
+        <img src="assets/hopfield.png" width="40%">
+</section>
+<section>
+    <p> Hopfield algorithm </p> 
+    <p align="left" style="font-size:20px">  
+    Start with $N$ neurons <br><br>
+Each neuron $i$ has two states: $V_i=0$ for `off' and $V_i=1$ for 'on'<br><br>
+$T_{ij}$ is the strength of the synaptic connection from neuron $j$ to neuron $i$. <br><br>
+$T_{ij}$ is positive/negative for excitatory/inhibitory  connections, and zero for unconnected neurons.<br><br>
+Each neuron $i$ readjusts its state randomly in time (mean rate $W$).<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; $V_i \rightarrow 1$ if $\sum_{j \neq i} T_{ij}V_j > U_i$<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; $V_i \rightarrow 0$ if $\sum_{j \neq i} T_{ij}V_j < U_i$<br><br>
+Each neuron has a fixed threshold $U_i$ for switching (typically $U_i = 0$).<br><br>
+    </p>
+</section>
+<section>
+    <p> Attractor dynamics </p> 
+        <img src="assets/attractordynamics.png" width="80%">
+</section>
+</section>
+
+<section>
+<section>
+    <p> Ram&oacute;n y Cajal </p> 
+        <img src="assets/cajal.png" width="80%">
+</section>
 <section data-background="#FFFFFF">
-    <p> Shared principles, shared mechanisms </p> 
-        <img src="assets/GPCRs.png" width="60%"> 
-        <p align="center" style="font-size:25px">  
-           Nothing in biology makes sense except in the light of evolution. <br>
-            Dobzhansky
-        </p>
+    <p> Real sensory circuits </p> 
+        <img src="assets/Fain1_2.png" width="80%">
 </section>
-<!-- Chemotaxis Slide -->
-
 <section data-background="#FFFFFF">
-    <p> Shared principles, shared mechanisms </p> 
-        <img src="assets/Figure88ReceptorSignalingcropped.png" width="80%">
-        <p align="center" style="font-size:25px">  
-            All neurons "smell" other neurons        
-        </p>
+    <p> Edge detection by lateral inhibition </p> 
+        <img src="assets/edgedetection.png" width="80%">
+</section>
+<section>
+    <p> Mach band illusion </p> 
+        <img src="assets/machbands.jpeg" width="60%">
+</section>
 </section>
 
+<section>
+<section data-background="#FFFFFF">
+    <p>Chemical sensing with a nose</p>
+    <div class="row">
+        <div class="column left">
+            <img src="assets/olfactoryreceptors.jpg" width="100%"> 
+        </div>
+        <div class="column right" >
+            <img src="assets/smells.jpg" width="100%"> 
+        </div>
+    </div>
+</section>
+<section data-background="#FFFFFF">
+    <p> Combinatorial codes </p> 
+        <img src="assets/combinatorial.jpg" width="40%">
+</section>
+<section data-background="#FFFFFF">
+    <p> Cryo-electron microscopy </p> 
+        <img src="assets/MarmolRutaFigure.png" width="80%">
+</section>
+</section>
 
+<section>
+<section>
+        <img src="assets/aristotle-senses.jpg" width="80%">
+</section>
 <section>
     <div class="row">
         <div class="column left">
@@ -168,193 +265,29 @@
         </div>
     </div>
 </section>
-
 <section>
-    <p> Thermal imaging </p> 
-        <img src="assets/thermalimaging.jpg" width="60%">
+        <img src="assets/weaklyelectricfish.png" width="80%">
+</section>
+</section>
+
+
+<section data-background="#FFFFFF">
+    <p> Shared principles, shared mechanisms </p> 
+        <img src="assets/GPCRs.png" width="60%"> 
         <p align="center" style="font-size:25px">  
-            Biological temperature sensors can detect 0.001 &#176;C changes! 
+           Nothing in biology makes sense except in the light of evolution. <br>
+            Dobzhansky
         </p>
 </section>
+<!-- Chemotaxis Slide -->
 
 <section data-background="#FFFFFF">
-    <p> Electrical imaging </p> 
-        <img src="assets/weaklyelectricfishcropped.png" width="80%">
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Visual and olfactory "imaging"</p>
-    <p> <img src=" assets/Fain1_2.png " width="90%"> </p>
-    <p align="left"> <small> (A) Bipolar sensory neurons from mammalian olfactory mucosa.<br>  (B) Section of retina of an adult dog.  </small> </p>
-</section>
-
-
-
-<section data-background="#FFFFFF">
-    <p>The structure of an odor/ORN interaction</p>
-            <img src=" assets/MarmolRutaFigure.png " width="80%"> 
-            <p align="justify" style="font-size:25px">  
-            Odorant-evoked opening of an ionotropic olfactory receptor. a, c, The channel pores of unbound (a, blue) and eugenol-bound (c, pink). b, The diameter of the ion conduction pathway (solid lines) and along the anchor domain (dashed lines). d, Close-up view of the pore from the extracellular side. 
-            </p>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Rod and cone photoreceptor cells</p>
-    <p> <img src=" assets/Fain9_13.png " width="40%"> </p>
-</section>
-
-<section>
-    <p> Rhodopsin </p> 
-        <img src="assets/rhodopsinstructure.jpeg" width="30%">
+    <p> Shared principles, shared mechanisms </p> 
+        <img src="assets/Figure88ReceptorSignalingcropped.png" width="80%">
         <p align="center" style="font-size:25px">  
-            A GPCR with an embedded pigment called retinal        
+            All neurons "smell" other neurons        
         </p>
 </section>
-
-<section data-background="#FFFFFF">
-    <p> The Visual Cycle </p> 
-        <img src="assets/visualcycle.png" width="50%">
-        <p align="center" style="font-size:25px">  
-            Change in retinal structure &#8594 Change in protein structure and activity        
-        </p>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Sensory transduction</p>
-    <div class="row">
-        <div class="column left">
-            <img src=" assets/Schemesignaltransduction.png " width="80%"> 
-        </div>
-        <div align="left" class="column right" style="font-size:25px">
-            <br>
-            <br>
-            <br>
-            <li> Sensory input begins behavior </li>
-            <li> An ideal signal analyzer is  <em> robust </em>  and  <em> efficient </em>  </li>
-            <li> An ideal detector has  <em> high sensitivity, high selectivity, and low cross-talk </em>  </li>
-            <li> An ideal amplifier has  <em> high gain </em>  and  <em> low noise </em>  </li>
-        </div>
-    </div>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Chemical sensing with a single-celled brain</p>
-            <img src=" assets/ecoli.jpg " width="80%"> 
-            <p style="font-size:30px">  
-            Bacteria <em> smell </em> molecules, <em> calculate </em> the direction of gradients, <br> and <em> swim </em> towards better locations
-            </p>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Bacterial chemotaxis</p>
-    <p> <img src=" assets/Berg1988Figure1.png " width="60%"> </p>
-            <div align="center" style="font-size:25px">  
-                Physics is different at different scales 
-            </div>
-</section>
-
-<section data-background="#000000">
-    <p>Brownian Motion</p>
-        <video loop controls='true' width='70%' height='70%' src="assets/brownian_motion.webm" data-autoplay></video>
-</section>
-
-<section data-background="#000000">
-    <p>Bacteria swimming</p>
-        <video loop controls='true' width='70%' height='70%' src="assets/bacteriaswimming.mp4" data-autoplay></video>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Bacterial chemotaxis</p>
-    <p> <img src="assets/Berg1988Figure2.png" width="40%"> </p>
-            <div align="center" style="font-size:25px">  
-                Quantifying biology 
-            </div>
-</section>
-
-
-<section>
-    <p>Visual transduction</p>
-    <div class="row">
-        <div class="column left">
-            <img src="assets/cajal_retina.jpg" width="80%"> 
-        </div>
-        <div align="left" class="column right" style="font-size:25px">
-            <br>
-            <br>
-            Photoreceptors detect photons <br>
-            <br>
-            The retina calculates spatial gradients that outline objects <br>
-            <br>
-            And spatiotemporal gradients that indicate movement <br>
-            <br>
-            The brain makes decisions<br>
-        </div>
-    </div>
-</section>
-
-<section>
-    <p> Mach bands </p> 
-        <img src="assets/machbands.jpeg" width="60%">
-        <p align="center" style="font-size:25px">  
-            An illusion caused because our retinas calculate spatial derivatives
-        </p>
-</section>
-
-<!-- Olfactory Transduction Slide -->
-
-<section data-background="#FFFFFF">
-    <p>Chemical sensing with a nose</p>
-    <div class="row">
-        <div class="column left">
-            <img src="assets/olfactoryreceptors.jpg" width="100%"> 
-        </div>
-        <div class="column right" >
-            <img src="assets/smells.jpg" width="100%"> 
-        </div>
-    </div>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>Combinatorial codes</p>
-    <div class="row">
-        <div class="column left">
-            <img src="assets/combinatorial.jpg" width="80%"> 
-        </div>
-        <div align="left" class="column right" style="font-size:25px">
-            <br> 
-            <br> 
-            <br> 
-            <li> The nose contains many different olfactory receptors  </li> 
-            
-            <li> The nose smells many different molecules  </li> 
-            
-            <li> One molecule activates different receptors  </li> 
-            
-            <li> One receptor is activated by different molecules  </li> 
-            
-            <li> The brain uses population-level codes to identify and discriminate odor objects </li> 
-            
-        </div>
-    </div>
-</section>
-
-<section data-background="#FFFFFF">
-    <p>The nose solves a hard counting problem  </p>
-    <div class="row">
-        <div class="column left">
-            <img src=" assets/odorplume.png " width="80%"> 
-        </div>
-        <div class="column right">
-            <img src=" assets/thenosegrays.png " width="80%"> 
-        </div>
-    </div>
-            <div align="left" style="font-size:25px">  
-                <li> We effortlessly identify many different odor objects in the environment </li> 
-                <li> The nose disentangles distinct odor objects even when their smells are mixed in the nasal cavity, and nobody knows how  </li> 
-            </div>
-</section>
-
-<!-- Thermal activation Slide -->
 
 <section data-background="#FFFFFF">
     <p>Energy activates sensory molecules</p>
@@ -409,65 +342,24 @@
         </div>
     </div>
 </section>
-
-<!-- Probability of Seeing Slide -->
-
 <section data-background="#FFFFFF">
-    <p>Probability of seeing </p>
+    <p>Sensory transduction</p>
     <div class="row">
         <div class="column left">
-            <img src=" assets/probability_of_seeing.png " width="80%"> 
+            <img src=" assets/Schemesignaltransduction.png " width="80%"> 
         </div>
         <div align="left" class="column right" style="font-size:25px">
             <br>
             <br>
-            <li> In a classic experiment by Hecht, Shlaer, and Pirenne, observers were asked whether they <em> saw  </em> a flash as a function of the average number of photons on the retina </li> 
             <br>
-            <li> What is the <em> physics  </em> of this <em> psychophysical function  </em>? </li> 
+            <li> Sensory input begins behavior </li>
+            <li> An ideal signal analyzer is  <em> robust </em>  and  <em> efficient </em>  </li>
+            <li> An ideal detector has  <em> high sensitivity, high selectivity, and low cross-talk </em>  </li>
+            <li> An ideal amplifier has  <em> high gain </em>  and  <em> low noise </em>  </li>
         </div>
     </div>
 </section>
 
-<!-- Bacterial chemotaxis Slide -->
-
-<section data-background="#FFFFFF">
-    <p>Bacterial chemotaxis </p>
-            <img src=" assets/bacterialchemotaxis.jpg " width="80%"> 
-    <div class="row">
-        <div align="left" class="column left" style="font-size:20px">
-            <li> Bacteria count molecules in their environment </li> 
-            <li> Chemoreceptor activity triggers a <em> sensory transduction </em> cascade that changes the concentration of molecules that affect flagellar rotation </li> 
-        </div>
-        <div align="left" class="column right" style="font-size:20px">
-            <li> CCW flagellar rotation corresponds to  <em> runs </em>  and CW flagellar rotation corresponds to  <em> tumbles </em>  </li> 
-            <li> When the bacteria thinks life is getting better, runs get longer, leading to a  <em> biased random walk </em>  </li> 
-        </div>
-    </div>
-</section>
-
-<!-- Counting general problem Slide -->
-
-<section data-background="#FFFFFF">
-    <p>Counting molecules is a <em> common  </em> problem </p>
-    <div class="row">
-        <div class="column left">
-            <img src=" assets/Signal_transduction_pathways.png " width="90%"> 
-        </div>
-        <div class="column right">
-            <img src=" assets/800px-Neuron_synapse.png " width="60%"> 
-        </div>
-    </div>
-    <div class="row">
-        <div class="column left">
-            <p align="center" style="font-size:25px">  
-            In every signal transduction pathway, molecules count other molecules</p>
-        </div>
-        <div class="column right">
-            <p align="center" style="font-size:25px">  
-            In every synapse, receptors count neurotransmitter molecules </p>
-        </div>
-    </div>
-</section>
 
 </div>
 
